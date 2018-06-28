@@ -7,26 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD720E4D7610029C1F9 /* AddViewController.swift */; };
+		58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */; };
 		5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DA20E386A2002C1D42 /* AppDelegate.swift */; };
 		5850E5DD20E386A2002C1D42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DC20E386A2002C1D42 /* ViewController.swift */; };
 		5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5DE20E386A2002C1D42 /* Main.storyboard */; };
-		5850E5E320E386A2002C1D42 /* Emergency_Numbers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5E120E386A2002C1D42 /* Emergency_Numbers.xcdatamodeld */; };
 		5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5E420E386AB002C1D42 /* Assets.xcassets */; };
 		5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5E620E386AB002C1D42 /* LaunchScreen.storyboard */; };
 		5850E5F120E387BA002C1D42 /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5F020E387BA002C1D42 /* app-icon.png */; };
 		5850E5F320E38DE4002C1D42 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5F220E38DE3002C1D42 /* loading.gif */; };
 		5850E5F520E39040002C1D42 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5F420E39040002C1D42 /* TableViewCell.swift */; };
 		5850E5FD20E3D324002C1D42 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5FC20E3D324002C1D42 /* info.png */; };
-		5850E5FF20E3DB8E002C1D42 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5FE20E3DB8E002C1D42 /* logo.png */; };
 		5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */; };
+		5857473C20E4BBF200642CE2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473B20E4BBF200642CE2 /* logo.png */; };
+		5857473E20E4C1BB00642CE2 /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473D20E4C1BB00642CE2 /* Octocat.png */; };
+		5857474020E4CBFC00642CE2 /* Gredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857473F20E4CBFC00642CE2 /* Gredient.swift */; };
+		EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58466BD720E4D7610029C1F9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
 		5850E5D720E386A2002C1D42 /* Emergency Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emergency Numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5850E5DA20E386A2002C1D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5850E5DC20E386A2002C1D42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5850E5DF20E386A2002C1D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5850E5E220E386A2002C1D42 /* Emergency_Numbers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Emergency_Numbers.xcdatamodel; sourceTree = "<group>"; };
 		5850E5E420E386AB002C1D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5850E5E720E386AB002C1D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5850E5E920E386AB002C1D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,8 +39,13 @@
 		5850E5F220E38DE3002C1D42 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		5850E5F420E39040002C1D42 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5850E5FC20E3D324002C1D42 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
-		5850E5FE20E3DB8E002C1D42 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		5857473B20E4BBF200642CE2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		5857473D20E4C1BB00642CE2 /* Octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Octocat.png; sourceTree = "<group>"; };
+		5857473F20E4CBFC00642CE2 /* Gredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gredient.swift; sourceTree = "<group>"; };
+		7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency_Numbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.release.xcconfig"; sourceTree = "<group>"; };
+		E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38122152100A3D1D57B2B693 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5850E5CE20E386A1002C1D42 = {
 			isa = PBXGroup;
 			children = (
 				5850E5D920E386A2002C1D42 /* Emergency Numbers */,
 				5850E5D820E386A2002C1D42 /* Products */,
+				B17A0A12A1D436869E8CAD16 /* Pods */,
+				38122152100A3D1D57B2B693 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,7 +103,8 @@
 		5850E5EF20E3879E002C1D42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5850E5FE20E3DB8E002C1D42 /* logo.png */,
+				5857473B20E4BBF200642CE2 /* logo.png */,
+				5857473D20E4C1BB00642CE2 /* Octocat.png */,
 				5850E5FC20E3D324002C1D42 /* info.png */,
 				5850E5F220E38DE3002C1D42 /* loading.gif */,
 				5850E5F020E387BA002C1D42 /* app-icon.png */,
@@ -94,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5850E5DA20E386A2002C1D42 /* AppDelegate.swift */,
+				5857473F20E4CBFC00642CE2 /* Gredient.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -113,6 +136,7 @@
 				5850E5DC20E386A2002C1D42 /* ViewController.swift */,
 				5850E5F420E39040002C1D42 /* TableViewCell.swift */,
 				5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */,
+				58466BD720E4D7610029C1F9 /* AddViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,9 +144,18 @@
 		5850E5F920E3CE73002C1D42 /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
-				5850E5E120E386A2002C1D42 /* Emergency_Numbers.xcdatamodeld */,
+				58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */,
 			);
 			path = Datasource;
+			sourceTree = "<group>";
+		};
+		B17A0A12A1D436869E8CAD16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */,
+				8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5850E5EC20E386AB002C1D42 /* Build configuration list for PBXNativeTarget "Emergency Numbers" */;
 			buildPhases = (
+				9D40CF261B83BD2CA3FD94C4 /* [CP] Check Pods Manifest.lock */,
 				5850E5D320E386A2002C1D42 /* Sources */,
 				5850E5D420E386A2002C1D42 /* Frameworks */,
 				5850E5D520E386A2002C1D42 /* Resources */,
+				00106A82340DF3CF036EE93C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,10 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */,
+				5857473C20E4BBF200642CE2 /* logo.png in Resources */,
 				5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */,
+				5857473E20E4C1BB00642CE2 /* Octocat.png in Resources */,
 				5850E5F320E38DE4002C1D42 /* loading.gif in Resources */,
 				5850E5F120E387BA002C1D42 /* app-icon.png in Resources */,
-				5850E5FF20E3DB8E002C1D42 /* logo.png in Resources */,
 				5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */,
 				5850E5FD20E3D324002C1D42 /* info.png in Resources */,
 			);
@@ -195,16 +231,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00106A82340DF3CF036EE93C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D40CF261B83BD2CA3FD94C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emergency Numbers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5850E5D320E386A2002C1D42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */,
 				5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */,
 				5850E5DD20E386A2002C1D42 /* ViewController.swift in Sources */,
+				58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */,
 				5850E5F520E39040002C1D42 /* TableViewCell.swift in Sources */,
-				5850E5E320E386A2002C1D42 /* Emergency_Numbers.xcdatamodeld in Sources */,
 				5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */,
+				5857474020E4CBFC00642CE2 /* Gredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +423,7 @@
 		};
 		5850E5ED20E386AB002C1D42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -365,6 +443,7 @@
 		};
 		5850E5EE20E386AB002C1D42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -404,19 +483,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5850E5E120E386A2002C1D42 /* Emergency_Numbers.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5850E5E220E386A2002C1D42 /* Emergency_Numbers.xcdatamodel */,
-			);
-			currentVersion = 5850E5E220E386A2002C1D42 /* Emergency_Numbers.xcdatamodel */;
-			path = Emergency_Numbers.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5850E5CF20E386A2002C1D42 /* Project object */;
 }
