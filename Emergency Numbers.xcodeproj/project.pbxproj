@@ -10,6 +10,7 @@
 		58215E6A20E612A90004BB8B /* link-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E6920E612A80004BB8B /* link-icon.png */; };
 		58215E7020E61A7B0004BB8B /* goal.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E6F20E61A7B0004BB8B /* goal.png */; };
 		58215E7220E62ABB0004BB8B /* email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7120E62ABA0004BB8B /* email-icon.png */; };
+		58215E7420E651990004BB8B /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7320E651980004BB8B /* Design.png */; };
 		58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD720E4D7610029C1F9 /* AddViewController.swift */; };
 		58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */; };
 		5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DA20E386A2002C1D42 /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 		58215E6920E612A80004BB8B /* link-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "link-icon.png"; sourceTree = "<group>"; };
 		58215E6F20E61A7B0004BB8B /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal.png; sourceTree = "<group>"; };
 		58215E7120E62ABA0004BB8B /* email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-icon.png"; sourceTree = "<group>"; };
+		58215E7320E651980004BB8B /* Design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Design.png; sourceTree = "<group>"; };
 		58466BD720E4D7610029C1F9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
 		5850E5D720E386A2002C1D42 /* Emergency Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emergency Numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 		5850E5EF20E3879E002C1D42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				58215E7320E651980004BB8B /* Design.png */,
 				58215E6920E612A80004BB8B /* link-icon.png */,
 				58215E7120E62ABA0004BB8B /* email-icon.png */,
 				5857473B20E4BBF200642CE2 /* logo.png */,
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28CA33020E566E9000A812C /* EmergencyNumbers.csv in Resources */,
+				58215E7420E651990004BB8B /* Design.png in Resources */,
 				5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */,
 				5857473C20E4BBF200642CE2 /* logo.png in Resources */,
 				5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */,
