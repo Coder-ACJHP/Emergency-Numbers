@@ -20,9 +20,11 @@
 		5850E5FD20E3D324002C1D42 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5FC20E3D324002C1D42 /* info.png */; };
 		5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */; };
 		5857473C20E4BBF200642CE2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473B20E4BBF200642CE2 /* logo.png */; };
-		5857473E20E4C1BB00642CE2 /* Octocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473D20E4C1BB00642CE2 /* Octocat.png */; };
 		5857474020E4CBFC00642CE2 /* Gredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857473F20E4CBFC00642CE2 /* Gredient.swift */; };
 		EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */; };
+		F230F9FB20E548DE00869E1A /* github-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F230F9FA20E548DE00869E1A /* github-logo.png */; };
+		F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230F9FC20E5589500869E1A /* ContactNumber.swift */; };
+		F28CA33020E566E9000A812C /* EmergencyNumbers.csv in Resources */ = {isa = PBXBuildFile; fileRef = F28CA32F20E566E9000A812C /* EmergencyNumbers.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +43,13 @@
 		5850E5FC20E3D324002C1D42 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		5857473B20E4BBF200642CE2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		5857473D20E4C1BB00642CE2 /* Octocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Octocat.png; sourceTree = "<group>"; };
 		5857473F20E4CBFC00642CE2 /* Gredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gredient.swift; sourceTree = "<group>"; };
 		7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency_Numbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.release.xcconfig"; sourceTree = "<group>"; };
 		E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.debug.xcconfig"; sourceTree = "<group>"; };
+		F230F9FA20E548DE00869E1A /* github-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "github-logo.png"; sourceTree = "<group>"; };
+		F230F9FC20E5589500869E1A /* ContactNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNumber.swift; sourceTree = "<group>"; };
+		F28CA32F20E566E9000A812C /* EmergencyNumbers.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmergencyNumbers.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				5857473B20E4BBF200642CE2 /* logo.png */,
-				5857473D20E4C1BB00642CE2 /* Octocat.png */,
 				5850E5FC20E3D324002C1D42 /* info.png */,
+				F230F9FA20E548DE00869E1A /* github-logo.png */,
 				5850E5F220E38DE3002C1D42 /* loading.gif */,
 				5850E5F020E387BA002C1D42 /* app-icon.png */,
 			);
@@ -144,7 +148,9 @@
 		5850E5F920E3CE73002C1D42 /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
+				F28CA32F20E566E9000A812C /* EmergencyNumbers.csv */,
 				58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */,
+				F230F9FC20E5589500869E1A /* ContactNumber.swift */,
 			);
 			path = Datasource;
 			sourceTree = "<group>";
@@ -218,10 +224,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28CA33020E566E9000A812C /* EmergencyNumbers.csv in Resources */,
 				5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */,
 				5857473C20E4BBF200642CE2 /* logo.png in Resources */,
 				5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */,
-				5857473E20E4C1BB00642CE2 /* Octocat.png in Resources */,
+				F230F9FB20E548DE00869E1A /* github-logo.png in Resources */,
 				5850E5F320E38DE4002C1D42 /* loading.gif in Resources */,
 				5850E5F120E387BA002C1D42 /* app-icon.png in Resources */,
 				5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */,
@@ -239,10 +246,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +287,7 @@
 				58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */,
 				5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */,
 				5850E5DD20E386A2002C1D42 /* ViewController.swift in Sources */,
+				F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */,
 				58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */,
 				5850E5F520E39040002C1D42 /* TableViewCell.swift in Sources */,
 				5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */,
@@ -426,8 +436,9 @@
 			baseConfigurationReference = E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N26XM7U465;
 				INFOPLIST_FILE = "Emergency Numbers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,7 +448,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,8 +457,9 @@
 			baseConfigurationReference = 8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N26XM7U465;
 				INFOPLIST_FILE = "Emergency Numbers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +469,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

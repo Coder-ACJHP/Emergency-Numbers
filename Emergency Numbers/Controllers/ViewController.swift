@@ -9,12 +9,11 @@
 import UIKit
 import SQLite
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
 
-    var contactListIds = [Int]()
-    var contactListNames = [String]()
-    var contactListNumbers = [Int]()
+    var singleCell = TableViewCell()
+    var contactList: [ContactNumber] = []
     @IBOutlet var dataContainer: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -25,10 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         dataContainer.dataSource = self
         dataContainer.addSubview(self.refreshControl)
         
-//        searchBar.sizeToFit()
-//        searchBar.placeholder = "Search"
-//        navigationItem.titleView = searchBar
+        searchBar.delegate = self
         
+        
+        //Populate table
         loadData()
     }
     
@@ -39,17 +38,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func loadData() {
         
         //Clean all arrays
-        contactListIds.removeAll(keepingCapacity: false)
-        contactListNumbers.removeAll(keepingCapacity: false)
-        contactListNames.removeAll(keepingCapacity: false)
+        contactList.removeAll(keepingCapacity: false)
         
         //Fetch all rows and append them to arrays
         let allData = DatabaseUtil.sharedInstance.fetchAll()
         for row in allData {
             do {
-                contactListNumbers.append(Int(try row.get(DatabaseUtil.sharedInstance.unitNumber)))
-                contactListNames.append(try row.get(DatabaseUtil.sharedInstance.unitName))
-                contactListIds.append(Int(try row.get(DatabaseUtil.sharedInstance.id)))
+                contactList.append(ContactNumber(
+                    contactId: Int64(try row.get(DatabaseUtil.sharedInstance.phoneNumber)),
+                    contactName: String(try row.get(DatabaseUtil.sharedInstance.description)),
+                    contactNumber: Int64(try row.get(DatabaseUtil.sharedInstance.id)))
+                )
             }catch {
                 print(error.localizedDescription)
             }
@@ -59,34 +58,48 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contactListNumbers.count
+        return contactList.count
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            contactListNames.remove(at: indexPath.row)
-            contactListNumbers.remove(at: indexPath.row)
-            DatabaseUtil.sharedInstance.deleteById(entityId: Int64(contactListIds[indexPath.row]))
-            contactListIds.remove(at: indexPath.row)
+            
+            DatabaseUtil.sharedInstance.deleteById(entityId: Int64(contactList[indexPath.row].id))
+            contactList.remove(at: indexPath.row)
             dataContainer.reloadData()
+
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let singleCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-        singleCell.unitName.text = contactListNames[indexPath.row]
-        singleCell.unitNumber = contactListNumbers[indexPath.row]
+        singleCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        singleCell.unitName.text = contactList[indexPath.row].description
+        singleCell.unitNumber = Int(contactList[indexPath.row].phoneNumber)
         return singleCell
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == "" {
+            self.loadData()
+        } else {
+            
+            var filtered:[ContactNumber] = []
+            filtered = contactList.filter {$0.description.hasPrefix(searchText)}
+            contactList = filtered
+            self.dataContainer.reloadData()
+            
+            contactList.forEach { (contactNumber) in
+                contactNumber.toString()
+            }
+        }
     }
     
     
     //Refresh data table
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action:
-            #selector(ViewController.handleRefresh(_:)),
-                                 for: UIControlEvents.valueChanged)
-        refreshControl.tintColor = UIColor.red
+        refreshControl.addTarget(self, action: #selector(ViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        refreshControl.tintColor = UIColor.init(red: 55.0/255, green: 105.0/255, blue: 162.0/255, alpha: 1.0)
         
         return refreshControl
     }()

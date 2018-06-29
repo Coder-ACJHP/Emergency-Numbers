@@ -8,34 +8,54 @@
 
 import Foundation
 import SQLite
+import CSV
 
 class DatabaseUtil {
     
     var database : Connection?
     static var sharedInstance = DatabaseUtil()
     
+    let fileManager = FileManager.default
     let emergencyNumbers = Table("EmergencyNumbers")
-    let id = Expression<Int64>("id")
-    let unitName = Expression<String>("unitName")
-    let unitNumber = Expression<Int64>("unitNumber")
+    let id = Expression<Int64>("Id")
+    let description = Expression<String>("Description")
+    let phoneNumber = Expression<Int64>("PhoneNumber")
     
     
     init() {
         
-        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/emergencyNumbers.sqlite3"
         print(path)
         
-        do {
-            database = try Connection("\(path)/emergencyNumbers.sqlite3")
-            try database?.run(emergencyNumbers.create(temporary: false, ifNotExists: true, block: {
-              table in
-                table.column(id)
-                table.column(unitName)
-                table.column(unitNumber)
-            }))
-        } catch {
+        if !fileManager.fileExists(atPath: path) {
+            do {
+                database = try Connection("\(path)")
+                try database?.run(emergencyNumbers.create(temporary: false, ifNotExists: true, block: {
+                    table in
+                    table.column(id, primaryKey: true)
+                    table.column(phoneNumber)
+                    table.column(description)
+                }))
+                print("Info: Database created successfully.")
+                
+                //Database is exist than populate it
+                let isPopulated : Bool = UserDefaults.standard.bool(forKey: "Database populated")
+                if isPopulated == false {
+                    self.prePopulateTable()
+                }
+                
+            } catch {
+                showErrorViaAlert(error: error)
+            }
+        } else {
+            do {
+                database = try Connection("\(path)")
+                print("Everything is O.K.")
+            } catch {
+                showErrorViaAlert(error: error)
+            }
             
-            showErrorViaAlert(error: error)
+            
         }
     }
     
@@ -63,7 +83,7 @@ class DatabaseUtil {
     
     func save(name: String, number: Int64) {
         do {
-            try database?.run(emergencyNumbers.insert(unitName <- name, unitNumber <- number))
+            try database?.run(emergencyNumbers.insert(description <- name, phoneNumber <- number))
         } catch {
             showErrorViaAlert(error: error)
         }
@@ -78,9 +98,38 @@ class DatabaseUtil {
         }
     }
     
+    func prePopulateTable() {
+        if let filepath = Bundle.main.path(forResource: "EmergencyNumbers", ofType: "csv") {
+            let stream = InputStream(fileAtPath: filepath)!
+            let csv = try! CSVReader(stream: stream)
+            if !(csv.next()?.isEmpty)! {
+                while let row = csv.next() {
+                    self.save(name: row[2], number: Int64(row[1])!)
+                }
+                //Save some values to can now it's already done for another sessions
+                UserDefaults.standard.set(true, forKey: "Database populated")
+                UserDefaults.standard.synchronize()
+                
+                print("Database populated successfully.")
+            } else {
+                showCustomErrorViaAlert(error: "CSV file is empty!\nCannot populate table!")
+            }
+        } else {
+            showCustomErrorViaAlert(error: "Cannot find cvs file path!")
+        }
+    }
+    
     func showErrorViaAlert(error: Error) {
         let alert = UIAlertController(title: "!حدث خطأ", message: "\(error.localizedDescription)", preferredStyle: UIAlertControllerStyle.alert)
         let dismissButton = UIAlertAction(title: "أغلق", style: UIAlertActionStyle.cancel, handler: nil)
+        alert.addAction(dismissButton)
+        UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func showCustomErrorViaAlert(error: String) {
+        let alert = UIAlertController(title: "Fatal error!", message: error, preferredStyle: UIAlertControllerStyle.alert)
+        let dismissButton = UIAlertAction(title: "Close", style: UIAlertActionStyle.cancel, handler: nil)
         alert.addAction(dismissButton)
         UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
         

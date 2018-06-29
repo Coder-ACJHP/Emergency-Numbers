@@ -43,12 +43,21 @@ class TableViewCell: UITableViewCell {
 
     @objc func slideButton(panGesture: UIPanGestureRecognizer) {
         
+        var location = panGesture.location(in: container) // get pan location
         
-        if panGesture.state == .ended || panGesture.state == .failed  || panGesture.state == .cancelled {
+        if panGesture.state == .failed  || panGesture.state == .cancelled {
             callButton.layer.position = CGPoint(x: 38.0, y: 38.0) // restore button center
             unitName.layer.opacity = 1.0
+        } else if panGesture.state == .ended {
+            //O.K. button swapped lets make call
+            guard let number = URL(string: "tel://\(unitNumber)") else {return}
+            callButton.layer.position = CGPoint(x: 38.0, y: 38.0) // restore button center
+            unitName.layer.opacity = 1.0
+            UIApplication.shared.open(number, options: [ : ], completionHandler: nil)
+            print(number)
+            print("Making call....")
         } else {
-            var location = panGesture.location(in: container) // get pan location
+            
             unitName.layer.opacity = unitName.layer.opacity - Float(location.x) / 2500
             //Let the button swiping on 1 line
             if location.y > 38.0 || location.y < 38.0 {
@@ -61,13 +70,9 @@ class TableViewCell: UITableViewCell {
                 location.x = 38.0
             }
             callButton.layer.position = location // set button to where finger is
-            //O.K. button swapped lets make call
-            if unitNumber != 0 {
-                guard let number = URL(string: "tel://\(unitNumber)") else {return}
-                UIApplication.shared.open(number, options: [ : ], completionHandler: nil)
-            }
-            
         }
+        
+        
         
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
