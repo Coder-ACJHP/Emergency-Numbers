@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58215E6A20E612A90004BB8B /* link-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E6920E612A80004BB8B /* link-icon.png */; };
+		58215E7020E61A7B0004BB8B /* goal.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E6F20E61A7B0004BB8B /* goal.png */; };
+		58215E7220E62ABB0004BB8B /* email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7120E62ABA0004BB8B /* email-icon.png */; };
 		58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD720E4D7610029C1F9 /* AddViewController.swift */; };
 		58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */; };
 		5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DA20E386A2002C1D42 /* AppDelegate.swift */; };
@@ -20,7 +23,6 @@
 		5850E5FD20E3D324002C1D42 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5FC20E3D324002C1D42 /* info.png */; };
 		5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */; };
 		5857473C20E4BBF200642CE2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473B20E4BBF200642CE2 /* logo.png */; };
-		5857474020E4CBFC00642CE2 /* Gredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857473F20E4CBFC00642CE2 /* Gredient.swift */; };
 		EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */; };
 		F230F9FB20E548DE00869E1A /* github-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F230F9FA20E548DE00869E1A /* github-logo.png */; };
 		F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230F9FC20E5589500869E1A /* ContactNumber.swift */; };
@@ -28,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58215E6920E612A80004BB8B /* link-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "link-icon.png"; sourceTree = "<group>"; };
+		58215E6F20E61A7B0004BB8B /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal.png; sourceTree = "<group>"; };
+		58215E7120E62ABA0004BB8B /* email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-icon.png"; sourceTree = "<group>"; };
 		58466BD720E4D7610029C1F9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
 		5850E5D720E386A2002C1D42 /* Emergency Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emergency Numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +48,6 @@
 		5850E5FC20E3D324002C1D42 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		5857473B20E4BBF200642CE2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		5857473F20E4CBFC00642CE2 /* Gredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gredient.swift; sourceTree = "<group>"; };
 		7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency_Numbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.release.xcconfig"; sourceTree = "<group>"; };
 		E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,7 +111,10 @@
 		5850E5EF20E3879E002C1D42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				58215E6920E612A80004BB8B /* link-icon.png */,
+				58215E7120E62ABA0004BB8B /* email-icon.png */,
 				5857473B20E4BBF200642CE2 /* logo.png */,
+				58215E6F20E61A7B0004BB8B /* goal.png */,
 				5850E5FC20E3D324002C1D42 /* info.png */,
 				F230F9FA20E548DE00869E1A /* github-logo.png */,
 				5850E5F220E38DE3002C1D42 /* loading.gif */,
@@ -120,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				5850E5DA20E386A2002C1D42 /* AppDelegate.swift */,
-				5857473F20E4CBFC00642CE2 /* Gredient.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -228,11 +234,14 @@
 				5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */,
 				5857473C20E4BBF200642CE2 /* logo.png in Resources */,
 				5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */,
+				58215E7020E61A7B0004BB8B /* goal.png in Resources */,
 				F230F9FB20E548DE00869E1A /* github-logo.png in Resources */,
 				5850E5F320E38DE4002C1D42 /* loading.gif in Resources */,
+				58215E7220E62ABB0004BB8B /* email-icon.png in Resources */,
 				5850E5F120E387BA002C1D42 /* app-icon.png in Resources */,
 				5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */,
 				5850E5FD20E3D324002C1D42 /* info.png in Resources */,
+				58215E6A20E612A90004BB8B /* link-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +300,6 @@
 				58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */,
 				5850E5F520E39040002C1D42 /* TableViewCell.swift in Sources */,
 				5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */,
-				5857474020E4CBFC00642CE2 /* Gredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

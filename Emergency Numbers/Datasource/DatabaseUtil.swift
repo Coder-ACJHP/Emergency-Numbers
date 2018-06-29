@@ -25,7 +25,6 @@ class DatabaseUtil {
     init() {
         
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! + "/emergencyNumbers.sqlite3"
-        print(path)
         
         if !fileManager.fileExists(atPath: path) {
             do {
@@ -48,14 +47,11 @@ class DatabaseUtil {
                 showErrorViaAlert(error: error)
             }
         } else {
-            do {
-                database = try Connection("\(path)")
-                print("Everything is O.K.")
-            } catch {
+            
+            do {database = try Connection("\(path)")} catch {
                 showErrorViaAlert(error: error)
             }
-            
-            
+ 
         }
     }
     

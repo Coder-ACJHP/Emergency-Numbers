@@ -10,10 +10,15 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var unitNameField: UITextField!
     @IBOutlet weak var unitNumberField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Draw border to better look
+        saveButton.layer.borderWidth = 2
+        saveButton.layer.borderColor = UIColor.init(red: 255 / 255, green: 255 / 255, blue: 255 / 255, alpha: 0.4).cgColor
 
     }
 

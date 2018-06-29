@@ -45,9 +45,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         for row in allData {
             do {
                 contactList.append(ContactNumber(
-                    contactId: Int64(try row.get(DatabaseUtil.sharedInstance.phoneNumber)),
+                    contactId: Int64(try row.get(DatabaseUtil.sharedInstance.id)),
                     contactName: String(try row.get(DatabaseUtil.sharedInstance.description)),
-                    contactNumber: Int64(try row.get(DatabaseUtil.sharedInstance.id)))
+                    contactNumber: Int64(try row.get(DatabaseUtil.sharedInstance.phoneNumber)))
                 )
             }catch {
                 print(error.localizedDescription)
