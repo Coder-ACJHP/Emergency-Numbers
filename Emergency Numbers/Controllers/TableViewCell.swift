@@ -21,7 +21,7 @@ class TableViewCell: UITableViewCell {
         //Set container borders and masks
         container.layer.cornerRadius = 4
         container.layer.borderWidth = 0.5
-        container.layer.borderColor = UIColor.gray.cgColor
+        container.layer.borderColor = UIColor.init(red: 55 / 255, green: 105 / 255, blue: 162 / 255, alpha: 1.0).cgColor//UIColor.gray.cgColor
         container.layer.shadowColor = UIColor.black.cgColor
         container.layer.shadowOpacity = 1
         container.layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -33,13 +33,14 @@ class TableViewCell: UITableViewCell {
         callButton.addGestureRecognizer(panRecognizer)
         
         callButton.layer.borderWidth = 2
+        callButton.layer.cornerRadius = 4
         callButton.layer.borderColor = UIColor.init(red: 255 / 255, green: 255 / 255, blue: 255 / 255, alpha: 0.4).cgColor
     }
 
     @objc func slideButton(slideGesture: UIPanGestureRecognizer) {
         
         let layerOpacity:Float = 1.0
-        let fixedPosition = CGPoint(x: 38.0, y: 38.0)
+        let fixedPosition = CGPoint(x: 40.0, y: 38.0)
         var location = slideGesture.location(in: container) // get pan location
         
         if slideGesture.state == .failed  || slideGesture.state == .cancelled {
