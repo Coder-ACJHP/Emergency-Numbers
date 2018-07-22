@@ -19,6 +19,7 @@ class AddViewController: UIViewController {
         
         //Draw border to better look
         saveButton.layer.borderWidth = 2
+        saveButton.layer.cornerRadius = 4
         saveButton.layer.borderColor = UIColor.init(red: 255 / 255, green: 255 / 255, blue: 255 / 255, alpha: 0.4).cgColor
 
     }
@@ -73,8 +74,9 @@ extension AddViewController: MFMailComposeViewControllerDelegate {
         controller.dismiss(animated: true, completion: nil)
     }
     
+    // It is against Apple guidelines so we have send the email with user interaction!
     fileprivate func createMessageTemplate(name: String, number: String) -> String {
-        let htmlMessageAsString = "<h1>Hi dev team!</h1><p>I already added new number for my own database and I would like to inform you also!</p><div><label>Unit name is: </label><span> " + name + "</span></div><div><label>Unit number is: </label><span> " + number + "</span></div>"
+        let htmlMessageAsString = "<h1>مرحبا فريق التطوير!</h1><p>لقد قمت باضافة رقمًا جديدًا لقاعدة بياناتي الخاصة وأود أن أبلغكم أيضًا!</p><div><label>Unit name is: </label><span> " + name + "</span></div><div><label>Unit number is: </label><span> " + number + "</span></div>"
         return htmlMessageAsString
     }
     

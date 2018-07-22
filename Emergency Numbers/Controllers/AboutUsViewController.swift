@@ -16,12 +16,10 @@ class AboutUsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        logoContainer.layer.cornerRadius = logoContainer.frame.width / 2
+        logoContainer.layer.cornerRadius = logoContainer.frame.height / 2
         logoContainer.layer.borderWidth = 1.0
         logoContainer.layer.borderColor = UIColor.lightGray.cgColor
-        secondImageContainer.layer.cornerRadius = secondImageContainer.frame.width / 2
-        secondImageContainer.layer.borderWidth = 1.0
-        secondImageContainer.layer.borderColor = UIColor.lightGray.cgColor
+        secondImageContainer.layer.cornerRadius = secondImageContainer.frame.height / 2
         
         //Draw border to better look
         sendEmailButton.layer.borderWidth = 2

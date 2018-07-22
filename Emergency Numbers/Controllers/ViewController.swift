@@ -84,7 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             
             var filtered:[ContactNumber] = []
-            filtered = contactList.filter {$0.description.hasPrefix(searchText)}
+            filtered = contactList.filter {$0.description.contains(searchText)}
             contactList = filtered
             self.dataContainer.reloadData()
             
@@ -107,6 +107,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         loadData()
         refreshControl.endRefreshing()
+    }
+    
+    // Hide keyboard when scroll started
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        searchBar.endEditing(true)
+    }
+    // Hide keyboard when search clicked
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
+    // Hide keyboard when cancel button pressed
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+        self.view.endEditing(true)
     }
     
 }
