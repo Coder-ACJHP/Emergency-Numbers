@@ -57,7 +57,7 @@ extension AddViewController: MFMailComposeViewControllerDelegate {
         if MFMailComposeViewController.canSendMail() {
             let email = MFMailComposeViewController()
             email.mailComposeDelegate = self
-            email.setToRecipients(["info@codeforiraq.org"])
+            email.setToRecipients(["emnumbers-iraq@codeforiraq.org"])
             email.setMessageBody(createMessageTemplate(name: unitName, number: unitNumber), isHTML: true)
             
             //Show email sending page to user
