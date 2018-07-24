@@ -6,7 +6,7 @@
 <br>
 <h2> For any information & questions :</h2>
 <div>
-  Email us from here : <a href="mailto:info@codeforiraq.org">info@codeforiraq.org</a>
+  Email us from here : <a href="mailto:emnumbers-iraq@codeforiraq.org">emnumbers-iraq@codeforiraq.org</a>
 </div>
 <br><br>
 <div align="center">
