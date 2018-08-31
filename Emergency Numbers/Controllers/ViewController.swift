@@ -26,15 +26,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         searchBar.delegate = self
         
-        
         //Populate table
         loadData()
+        
+        // Request review
+        StoreReviewHelper.checkAndAskForReview()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.loadData), name: NSNotification.Name(rawValue: "addedNewNumber"), object: nil)
+        
     }
- 
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     @objc func loadData() {
         
         //Clean all arrays
@@ -66,7 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             DatabaseUtil.sharedInstance.deleteById(entityId: Int64(contactList[indexPath.row].id))
             contactList.remove(at: indexPath.row)
-            dataContainer.reloadData()
+            dataContainer.deleteRows(at: [indexPath], with: .automatic)
 
         }
     }
@@ -87,10 +95,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             filtered = contactList.filter {$0.description.contains(searchText)}
             contactList = filtered
             self.dataContainer.reloadData()
-            
-            contactList.forEach { (contactNumber) in
-                contactNumber.toString()
-            }
         }
     }
     

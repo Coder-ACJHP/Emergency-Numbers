@@ -77,7 +77,7 @@ class DatabaseUtil {
         }
     }
     
-    func save(name: String, number: Int64) {
+    func save(name: String, number: Int64) throws {
         do {
             try database?.run(emergencyNumbers.insert(description <- name, phoneNumber <- number))
         } catch {
@@ -100,7 +100,11 @@ class DatabaseUtil {
             let csv = try! CSVReader(stream: stream)
             if !(csv.next()?.isEmpty)! {
                 while let row = csv.next() {
-                    self.save(name: row[2], number: Int64(row[1])!)
+                    do {
+                        try self.save(name: row[2], number: Int64(row[1])!)
+                    } catch {
+                        print("Error! \(error.localizedDescription)")
+                    }
                 }
                 //Save some values to can now it's already done for another sessions
                 UserDefaults.standard.set(true, forKey: "Database populated")

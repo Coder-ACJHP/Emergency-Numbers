@@ -63,8 +63,8 @@ class TableViewCell: UITableViewCell {
                 location.y = 38.0
             }
             
-            if location.x > 364.0 { //Put border to button from x point
-                location.x = 364.0
+            if location.x > (364.0 - callButton.frame.width / 2) { //Put border to button from x point
+                location.x = (364.0 - callButton.frame.width / 2)
             } else if location.x < 38.0 {
                 location.x = 38.0
             }

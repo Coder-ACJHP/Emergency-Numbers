@@ -11,6 +11,7 @@ import MessageUI
 
 class AddViewController: UIViewController {
 
+    let crudOperationsManager = DatabaseUtil.sharedInstance
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var unitNameField: UITextField!
     @IBOutlet weak var unitNumberField: UITextField!
@@ -28,7 +29,10 @@ class AddViewController: UIViewController {
         
         if unitNameField.text != "" && unitNumberField.text != "" {
             //Add database methods to save
-            DatabaseUtil.sharedInstance.save(name: unitNameField.text!, number: Int64(unitNumberField.text!)!)
+            do {
+                try crudOperationsManager.save(name: unitNameField.text!, number: Int64(unitNumberField.text!)!)
+            } catch {print("Error! \(error.localizedDescription)")}
+            
             //Send notigication to info dev team
             sendEmail(unitName: unitNameField.text!, unitNumber: unitNumberField.text!)
             //Perform segue to return old page

@@ -11,6 +11,7 @@
 		58215E7020E61A7B0004BB8B /* goal.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E6F20E61A7B0004BB8B /* goal.png */; };
 		58215E7220E62ABB0004BB8B /* email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7120E62ABA0004BB8B /* email-icon.png */; };
 		58215E7420E651990004BB8B /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7320E651980004BB8B /* Design.png */; };
+		5842F1E5213929B500736A97 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842F1E4213929B500736A97 /* ReviewHelper.swift */; };
 		58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD720E4D7610029C1F9 /* AddViewController.swift */; };
 		58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */; };
 		5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DA20E386A2002C1D42 /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		58215E6F20E61A7B0004BB8B /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal.png; sourceTree = "<group>"; };
 		58215E7120E62ABA0004BB8B /* email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-icon.png"; sourceTree = "<group>"; };
 		58215E7320E651980004BB8B /* Design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Design.png; sourceTree = "<group>"; };
+		5842F1E4213929B500736A97 /* ReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHelper.swift; sourceTree = "<group>"; };
 		58466BD720E4D7610029C1F9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
 		5850E5D720E386A2002C1D42 /* Emergency Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emergency Numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5842F1E32139299800736A97 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5842F1E4213929B500736A97 /* ReviewHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5842F1E621392D3C00736A97 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5850E5F420E39040002C1D42 /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		5850E5CE20E386A1002C1D42 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +117,8 @@
 		5850E5D920E386A2002C1D42 /* Emergency Numbers */ = {
 			isa = PBXGroup;
 			children = (
+				5842F1E621392D3C00736A97 /* Cell */,
+				5842F1E32139299800736A97 /* Util */,
 				5850E5F920E3CE73002C1D42 /* Datasource */,
 				5850E5F820E3CE67002C1D42 /* Controllers */,
 				5850E5F720E3CE5A002C1D42 /* Views */,
@@ -147,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				5850E5DC20E386A2002C1D42 /* ViewController.swift */,
-				5850E5F420E39040002C1D42 /* TableViewCell.swift */,
 				5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */,
 				58466BD720E4D7610029C1F9 /* AddViewController.swift */,
 			);
@@ -304,6 +323,7 @@
 				58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */,
 				5850E5F520E39040002C1D42 /* TableViewCell.swift in Sources */,
 				5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */,
+				5842F1E5213929B500736A97 /* ReviewHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,12 +48,26 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="جاري التحميل..." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-fe-6WE">
+                                <rect key="frame" x="67" y="392" width="240" height="34"/>
+                                <color key="backgroundColor" red="0.1955239147" green="0.38169537739999998" blue="0.58215690939999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="AZN-hC-wdU"/>
+                                </constraints>
+                                <color key="textColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" lookupSuggestion="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.19215686274509805" green="0.38039215686274508" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="OWh-fe-6WE" firstAttribute="top" secondItem="5W5-VC-Ckk" secondAttribute="bottom" constant="8" id="65M-Lf-6Ft"/>
                             <constraint firstItem="5W5-VC-Ckk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="VXd-oP-ysm"/>
                             <constraint firstItem="5W5-VC-Ckk" firstAttribute="top" secondItem="Cqz-oB-GtJ" secondAttribute="bottom" constant="8" symbolic="YES" id="XB2-lf-70F"/>
                             <constraint firstItem="Cqz-oB-GtJ" firstAttribute="centerX" secondItem="5W5-VC-Ckk" secondAttribute="centerX" id="Ysa-yx-Gs8"/>
+                            <constraint firstItem="OWh-fe-6WE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hES-LV-pIz"/>
+                            <constraint firstItem="OWh-fe-6WE" firstAttribute="leading" secondItem="5W5-VC-Ckk" secondAttribute="leading" id="hdF-oM-QS7"/>
                             <constraint firstItem="Cqz-oB-GtJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nV2-lH-4hf"/>
                             <constraint firstItem="TAJ-Xr-dSH" firstAttribute="centerX" secondItem="5W5-VC-Ckk" secondAttribute="centerX" id="oNx-pl-KGn"/>
                             <constraint firstItem="Cqz-oB-GtJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="r6d-0g-hb0"/>
