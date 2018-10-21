@@ -3,182 +3,243 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EF425D49A4B33E2F680F5E3613B5B75 /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E21264DB58D1F2A12CCF950FB2FA8AB4 /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		147CE10BDD3654AD21C40E6D985DDF47 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8D193E45899CBB6892777E42D3C2E /* Operators.swift */; };
-		1754DA62EB933315E8B548A26244EEF3 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 430C7940D10E767227826B6B3CEA09D9 /* SQLite-Bridging.m */; };
-		256B54EF4AAA3FB5E452920AAF708E3C /* Pods-Emergency Numbers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6142FEC2B22E5335940B77FCAB29FE /* Pods-Emergency Numbers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25713177B277E47EEB48CADE871F6FF2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E14F986143BB78D7C1F154403513482 /* Errors.swift */; };
-		28D610097B83B1A87E9A3714C97C68CF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBEE85F5F9315611E7F035F459B978 /* Connection.swift */; };
-		29D908C865A42C151AA1443207221C2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		2F6943543FBFE0261B6EA84FA8F68BF3 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B36BECE08F40546778A16CB32B9382D /* CSVWriter.swift */; };
-		3C7A70D3428ACC40D6B098EA11958C20 /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852ABFBE6FBEE35B06A3F2688626C2A1 /* CSVError.swift */; };
-		416246D93E7968D91622B5DE3CECC242 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6340A72198C1BDBD7AEC0D3C5F595EC5 /* FTS4.swift */; };
-		42D7CC020E9ED810B231B4DDEFDC6B1B /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011CFACDF36D612E3FB61CB94775663 /* CoreFunctions.swift */; };
-		57728AA9342563DEA8281E4AB3FCA1C9 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5BBA20CC520ADE839D94AFB8158AD /* FTS5.swift */; };
-		5C2077235AF773ED7243781A3D3F7AD3 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A903F6B42743F40C4A59F16F9EBAC0 /* CSV.swift */; };
-		6657F832DBB01059F0AA4E3579DC59D2 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6696D56F6155461C7CDDFF2A42A6A /* AggregateFunctions.swift */; };
-		683F85BFF0FF58D150AEA9E336C75710 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D0FCDABCA72346CF31E6C02A8B4F04 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74320485C53EB40CDDC6EBD3FA11BACA /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D33662FFA0261BD6DF046652ACF6CD /* Expression.swift */; };
-		81D360B93F7541C8C8FD996FE71D480B /* Pods-Emergency Numbers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DBA9F53AB0BF408DF67E22525B3EF /* Pods-Emergency Numbers-dummy.m */; };
-		8A8D7AC7CF021B127AB781F7896A7E56 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFED16ED1BB19D8288DC29596320FA6B /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		902D89C2364AD6A9F032C44498C47564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		933CF90DDF40AB81567F7ADE2B8D156F /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02899D5ACF3230B34ACAE24CF08448F9 /* Setter.swift */; };
-		962EE8BA9D67D1D4DD71C2D311CC19DD /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B41C10E01BFABCB6E227BFCA9224D /* UnicodeIterator.swift */; };
-		97B3F4F1721FF1646352B564A3560679 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75FD39BF4BFCD1B4F90FA1BE7400EC /* DateAndTimeFunctions.swift */; };
-		9CC5E5D5EE1AF38C7D06B04D28DC552E /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE99CEBC1077FFE805C70A690079BE /* Schema.swift */; };
-		9E09EB4E3052245A75624E9221F70DA1 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380C5F2B3825BC56A886343ABC8CEBE /* Coding.swift */; };
-		9E202F9770E172822E026FB9B1DE6CF8 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E7E34B61CBEE302A5217DD70709CA0 /* Value.swift */; };
-		A2E0C068489415AD60C2DB33F7A873C8 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4331377DA68DD53FAADA392F19B81DF4 /* RTree.swift */; };
-		BFCDCDA3EE2D8668B3F82896CC102D66 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CCEA35741D87BE9259925B05B17672 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C474C6198EFA6B9869AA6E4984278D44 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0A03D9AD2535E74A1FAC41D52B908 /* Statement.swift */; };
-		D26BE5587CDBBAA61B9F4B95789AFED7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D59C95DB51D085494BAD07F5414C7EC7 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DEF2F49142CF0C6F6ADBC1C52076C3 /* CustomFunctions.swift */; };
-		D6799ECBE434BFE75CCBB872CA02FA79 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7678F739B402E8FCBD5C9A6DC1FE9BD /* Collation.swift */; };
-		D7E60C7B750C385B68A987A075D3C4EE /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6648929B8965232E5BE7D688B2E8D66 /* CSVReader.swift */; };
-		DEE0F9F10ADFEE46888DB60DA71AF237 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347C2CC133C29D9016EEB03DB571E4CC /* Endian.swift */; };
-		E16F5BEB6751E18FB415425A126BE273 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB48279E6E59F2875378D2CED03ACA2 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1E841C5D45675F8C0DD48081C973D10 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95351C2915750889E88EFB9BF1C0CDA /* Query.swift */; };
-		E3E35E0B878A926F23DBC0599D02079E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC657A2A9982AAD1967F29E418CAD610 /* Helpers.swift */; };
-		E92236D45CF1F30D03BCF0E9AD880164 /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5272F518C4CBC5BA25E10FFB14E53843 /* CSV.swift-dummy.m */; };
-		EF8C38793E741CD152C50D09239F11B1 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB371C6079D844950C56F34DFCAF36 /* SQLite.swift-dummy.m */; };
-		F13C2C759DE69F195469033232D53961 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8307C9A8ED714D5ED6387A0187C70 /* Blob.swift */; };
-		F38A004C2FA214C953353978C51174AA /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42BAF08C1AC1AFD62EEADDAFDD564C /* BinaryReader.swift */; };
-		FECB9D00755421FF9FAED506CF9F0F33 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFCA0D70A9E7364E21568DECD6B8CE /* Foundation.swift */; };
+		05CBE761405E9F2D0FC06427D5DA805F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A19D582086247FAAA89BD0F9E76C7E /* Operators.swift */; };
+		0AD20635FAE81FBC1827984224914714 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C73C67065985563F181739CD69631 /* CustomFunctions.swift */; };
+		0B6172879EFB350DC76693D661CEE680 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77604885DAFB7BCC8D24F7CAE5E753 /* FTS4.swift */; };
+		1025D91CC6049EB18FE2915F5FEE009E /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82FEA9D4BCC39CF9308017469807CF /* CSVWriter.swift */; };
+		1E1271C43D0BF624868FEBA69880A6BE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D807EF9416C517CEACFF31626CA2C7A /* Errors.swift */; };
+		1F0B6054BAE6B082C8818BF662C7D78A /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5034DBB4A0104F5C9604EF60187934 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2268FD0AF9514ADF42F971E835AD68B6 /* VegaScrollFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB033D3E4A5CF4E569815F053827023 /* VegaScrollFlowLayout-dummy.m */; };
+		24A266A2D9E5701E218941457B1C1418 /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62D59E28F7AA9B8C77ABF6A518FDB6 /* CSV.swift-dummy.m */; };
+		24C51A6A029E2B5954B895544365CAA7 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEF82F1EA67E1661987A20E7119E623 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286593E33AFDDAFA01B6A6D0D4E6806C /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FAF9E6716D50337D1334B82F20EBC8 /* Coding.swift */; };
+		292AE7F5F6A492F3267646346E4EE255 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		3A8390A80B57D58F04D435FE1E373280 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187B82E2CFA1227EC10C90655187C98 /* Schema.swift */; };
+		3DEA818B1BC32E8A9AF1F45F2929A191 /* VegaScrollFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 332AF64483A358CCC6DD4BA6E53DF81E /* VegaScrollFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FF7B6F3367B010FEFA03CAF4D4688DD /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75CA8A0C0A165CE13294916A271CBE4 /* FTS5.swift */; };
+		45DFFD5B2383E31FFDA0354E33506ADD /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F262C115B5F8FA8EEB550B200429229 /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E581A62B80FD577D0A55BC057D5FAB /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C7C295194D1053C0D0B0D51EFBB37 /* SQLite.swift-dummy.m */; };
+		51DCA9EE236CAC11E929D601A838459D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283B273C7E2CB0D49ACBAD741195187 /* Helpers.swift */; };
+		558FFCC81CF74B14B929DAB3884475B0 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B9DFF890696DB362F91AA7ADA343C /* Endian.swift */; };
+		5F642BAEBCBA2059784E8A8EA2F5E752 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683DCFF341AB0D166C3EA8691118A88 /* Foundation.swift */; };
+		60171A1DD475A10368640B94C417FFF0 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6DA19DF4F7D1E056E539664E29F14 /* Statement.swift */; };
+		676F7A6D9CE6E3B36A1071B657254E30 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD468CB8128FEC0F2BB4C625C75E7A /* Blob.swift */; };
+		7648D80C1099FD7FC76AC7A525E04054 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3465D11EE0ADBF666356154910FF0 /* CSV.swift */; };
+		769FF68A4E00B9A4BFB3214EA2CC75AD /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF68D6ABE307ECA62EB7AA68220B5FD /* DateAndTimeFunctions.swift */; };
+		796A69C2237E7A5234022C29A106365F /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7B18C7DF078758FABE9A9285E36C4B /* Value.swift */; };
+		7A3B653232F975028D05B03DE12658EB /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1000CE101B2603FF64695E9514F8B2 /* BinaryReader.swift */; };
+		87DF9A28F4013741FCC9B1E8A924CD8C /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3B33A6D743A0C7C9D293B3D313475 /* UnicodeIterator.swift */; };
+		901B600CD961E6BBB5FEDAFCD0120EBB /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C265194C7BD5412553BC87921DE9DE /* Connection.swift */; };
+		95310FC34159341D06C5573C0D0B0649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A285EC0CDA0F3EF7B95542297865FE11 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2F992A27B42AD08BF71AF6D3376454 /* Query.swift */; };
+		A5A955532497D6C5108F47B8DBED67D8 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C72D86BD58B3C6CE7AB2AE8B2F54846 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC2C24BB9F3B4DC1D9B9F541BE8A29AD /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3B95C046C148F23CD2346BA529707 /* Collation.swift */; };
+		B368EE7439DC126EABF3F96AE9956B15 /* Pods-Emergency Numbers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DBA9F53AB0BF408DF67E22525B3EF /* Pods-Emergency Numbers-dummy.m */; };
+		B537DB62E4D09972BC5AA60BCFB21729 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 638BE2E3DFC4AD9398DEA8786532F054 /* SQLite-Bridging.m */; };
+		B5EE7BC26A2673397E3F35411E198F41 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = F967342AA3E5D78BE9B9DF9D1D960761 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B63D2BE32126E741C08E1CEE934F6486 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09323D5B346706C66761F796568EA0C9 /* CSVReader.swift */; };
+		BC53C6F000426201D249418325BEC452 /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F8EB900A2BC868426C13D7A97E2AA9 /* VegaScrollFlowLayout.swift */; };
+		C4BF39219CED0E9AEC707E7460B86814 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C9C0DFFA4CF0F7453BDD64B7D74282D4 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9661C99ECD1A0202C73F00AF3D9DAD6C /* Setter.swift */; };
+		CF786974788A5FD9548E1993082FC8FC /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE15B6D1E2D793440E9E61699D37739 /* CoreFunctions.swift */; };
+		CFF8638FDEBFFE79E1CBF821B34DD4B6 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA227377C2B076C3A7A077F02CD630B4 /* Expression.swift */; };
+		E19E2ED91F4712E32F4EB5DD32811645 /* Pods-Emergency Numbers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6142FEC2B22E5335940B77FCAB29FE /* Pods-Emergency Numbers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E67C7733E27D0D4A66DF7941F4300B1C /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D467642F3EB444086FBD883FDCD3AAA /* CSVError.swift */; };
+		EB0FA839B60E58FFE5135BB54FBD3868 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D1C9D653F3EBD77D9F22A7D28998E5 /* AggregateFunctions.swift */; };
+		F161FB7348F73098236724BF065D72DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F86B8EE53AF4E3B635F96015E2B47519 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5908E844A0A8304D2C74D7F747A20 /* RTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		47DA97BDD041E9D17E9353B2B9BE12E7 /* PBXContainerItemProxy */ = {
+		0915D6A309109F29D29DA67EC3441B32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 701D4F02FAA85F5DE4F688FC7C082624;
+			remoteGlobalIDString = 91B96E9BA46525BB774B90C16F7EDBE5;
 			remoteInfo = CSV.swift;
 		};
-		568180F77DF047E9E4D9686361F095B9 /* PBXContainerItemProxy */ = {
+		E0029EDD81B1FD4DFCE13567C71DD9F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 64852C00F02011C03B292A16F2D5DA92;
+			remoteGlobalIDString = 50B3714696E3E48BFB3ED1218DE8E8D6;
 			remoteInfo = SQLite.swift;
+		};
+		E700E43139211F56167CEB328977338D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9525901F552619E3E082BF135BFE7B0;
+			remoteInfo = VegaScrollFlowLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02899D5ACF3230B34ACAE24CF08448F9 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
-		0ACAB0D6C2D68F001BB263332D579DA3 /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
-		1495F09F794788C1162777D0FE62993D /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20BFCA0D70A9E7364E21568DECD6B8CE /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		23CCEA35741D87BE9259925B05B17672 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		24A5BBA20CC520ADE839D94AFB8158AD /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		24DEF2F49142CF0C6F6ADBC1C52076C3 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		347C2CC133C29D9016EEB03DB571E4CC /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
-		34E7E34B61CBEE302A5217DD70709CA0 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		3B36BECE08F40546778A16CB32B9382D /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
+		0187B82E2CFA1227EC10C90655187C98 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		09323D5B346706C66761F796568EA0C9 /* CSVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Sources/CSV/CSVReader.swift; sourceTree = "<group>"; };
+		0A62D59E28F7AA9B8C77ABF6A518FDB6 /* CSV.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSV.swift-dummy.m"; sourceTree = "<group>"; };
+		13A5908E844A0A8304D2C74D7F747A20 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		1D467642F3EB444086FBD883FDCD3AAA /* CSVError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVError.swift; path = Sources/CSV/CSVError.swift; sourceTree = "<group>"; };
+		1D807EF9416C517CEACFF31626CA2C7A /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
+		25D1C9D653F3EBD77D9F22A7D28998E5 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		2F5901548C0200C520862BFA4FDE22EC /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		3168263A28D24B9FC24B97D57D0CE6FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		326A96A45DB537B945E6FA91E502C722 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSV.framework; path = CSV.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332AF64483A358CCC6DD4BA6E53DF81E /* VegaScrollFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-umbrella.h"; sourceTree = "<group>"; };
 		3B8A1A1F1354E7865839EBDE1061BE09 /* Pods-Emergency Numbers-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Emergency Numbers-resources.sh"; sourceTree = "<group>"; };
-		3D65F4E3F99E4CB23A5FDCFDDAB074B9 /* CSV.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-prefix.pch"; sourceTree = "<group>"; };
-		3DE94D26AA7D897B41F6AACDB1C4BE92 /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency_Numbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		430C7940D10E767227826B6B3CEA09D9 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		4331377DA68DD53FAADA392F19B81DF4 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		45D33662FFA0261BD6DF046652ACF6CD /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		3CE15B6D1E2D793440E9E61699D37739 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		3E0C73C67065985563F181739CD69631 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		40C265194C7BD5412553BC87921DE9DE /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		45E2725F8D55F79C5A38BCAE496ED40C /* Pods-Emergency Numbers-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Emergency Numbers-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46B62299C0884F0670B96D7A74AAE3C3 /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Emergency_Numbers.framework; path = "Pods-Emergency Numbers.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4741DB696376BE5B4E1D978887C1C1BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A02C971398DD3B34525B7FF3B8B04F8 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D42BAF08C1AC1AFD62EEADDAFDD564C /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
+		488EFC083ABC15C64B57A32B559CC3D7 /* CSV.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.xcconfig; sourceTree = "<group>"; };
+		4AC9C98FD73BD4D30FBA3A7A8131034A /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VegaScrollFlowLayout.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5034DBB4A0104F5C9604EF60187934 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		4D6142FEC2B22E5335940B77FCAB29FE /* Pods-Emergency Numbers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Emergency Numbers-umbrella.h"; sourceTree = "<group>"; };
-		5272F518C4CBC5BA25E10FFB14E53843 /* CSV.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSV.swift-dummy.m"; sourceTree = "<group>"; };
-		56677D83957604FF8FF593D220F0BDD4 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		533B9DFF890696DB362F91AA7ADA343C /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
+		53F224862B7D9FDD4E804756D5E098E0 /* VegaScrollFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VegaScrollFlowLayout.xcconfig; sourceTree = "<group>"; };
 		56CA2C3E2082326D321FB87B176ECF72 /* Pods-Emergency Numbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emergency Numbers.debug.xcconfig"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A4DBA9F53AB0BF408DF67E22525B3EF /* Pods-Emergency Numbers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Emergency Numbers-dummy.m"; sourceTree = "<group>"; };
-		5E75FD39BF4BFCD1B4F90FA1BE7400EC /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		6011CFACDF36D612E3FB61CB94775663 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		6340A72198C1BDBD7AEC0D3C5F595EC5 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		5AEF82F1EA67E1661987A20E7119E623 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		638BE2E3DFC4AD9398DEA8786532F054 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
 		69B71439A41BFF72335F2AF2A71F05C4 /* Pods-Emergency Numbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Emergency Numbers.release.xcconfig"; sourceTree = "<group>"; };
-		6C5B41C10E01BFABCB6E227BFCA9224D /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
-		71D0FCDABCA72346CF31E6C02A8B4F04 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		77E0A03D9AD2535E74A1FAC41D52B908 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		7DAB371C6079D844950C56F34DFCAF36 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		82E8D193E45899CBB6892777E42D3C2E /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		84EBB461C6206CC15E04739112DA3E24 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		852ABFBE6FBEE35B06A3F2688626C2A1 /* CSVError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVError.swift; path = Sources/CSV/CSVError.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6E5CB98DA2765D77C8578C574A46D822 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		73E60656CA68ED9C503AC8E7CDC1B22A /* VegaScrollFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		77D6DA19DF4F7D1E056E539664E29F14 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		790C7C295194D1053C0D0B0D51EFBB37 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		7C72D86BD58B3C6CE7AB2AE8B2F54846 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		80507309101D14100E6C26E5460044EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EA3465D11EE0ADBF666356154910FF0 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = Sources/CSV/CSV.swift; sourceTree = "<group>"; };
+		8F0C361607904E90A08F0F0997F7BB73 /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
+		8F262C115B5F8FA8EEB550B200429229 /* CSV.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-umbrella.h"; sourceTree = "<group>"; };
+		9283B273C7E2CB0D49ACBAD741195187 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		943C777DF7464CC15A0E4E3C4888D2F2 /* Pods-Emergency Numbers-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Emergency Numbers-frameworks.sh"; sourceTree = "<group>"; };
-		9E14F986143BB78D7C1F154403513482 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
-		A380C5F2B3825BC56A886343ABC8CEBE /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
-		A5D6696D56F6155461C7CDDFF2A42A6A /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
-		AADE99CEBC1077FFE805C70A690079BE /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		9661C99ECD1A0202C73F00AF3D9DAD6C /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		9E122BAA61476BD0BBA8C809BFF9C557 /* VegaScrollFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VegaScrollFlowLayout.modulemap; sourceTree = "<group>"; };
+		9E91CE21DCB133FB9A4A1AB191D3A4CC /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A19D582086247FAAA89BD0F9E76C7E /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		A200F6471FB4DFDFCB97E82BFF1ADBF6 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		AA227377C2B076C3A7A077F02CD630B4 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		ACB3B33A6D743A0C7C9D293B3D313475 /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
 		AD40FE98701F2332C89AAE8F7C1745CE /* Pods-Emergency Numbers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Emergency Numbers.modulemap"; sourceTree = "<group>"; };
-		B934DE952D765C7C1D77D4B19D786A2D /* CSV.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.xcconfig; sourceTree = "<group>"; };
-		BAB48279E6E59F2875378D2CED03ACA2 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		BFB8DF4673F417DF584D0B72761D5F48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5CBEE85F5F9315611E7F035F459B978 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		D1C962104F0748FF8C7F57BBA35E22B8 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		E21264DB58D1F2A12CCF950FB2FA8AB4 /* CSV.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-umbrella.h"; sourceTree = "<group>"; };
-		E2A903F6B42743F40C4A59F16F9EBAC0 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = Sources/CSV/CSV.swift; sourceTree = "<group>"; };
-		E7678F739B402E8FCBD5C9A6DC1FE9BD /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		E95351C2915750889E88EFB9BF1C0CDA /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		E9F9B66B5A7B88C0CD289861AEDCEBA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFED16ED1BB19D8288DC29596320FA6B /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		B6EAC82B526B5C40BB122A729C494669 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD3B95C046C148F23CD2346BA529707 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		BE1000CE101B2603FF64695E9514F8B2 /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
+		C683DCFF341AB0D166C3EA8691118A88 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		C7FD468CB8128FEC0F2BB4C625C75E7A /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		CA77604885DAFB7BCC8D24F7CAE5E753 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		CDF68D6ABE307ECA62EB7AA68220B5FD /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		D0F8EB900A2BC868426C13D7A97E2AA9 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VegaScrollFlowLayout.swift; path = VegaScroll/Classes/VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
+		D129A3A6195B1EF759F15E8877C2DCB8 /* CSV.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-prefix.pch"; sourceTree = "<group>"; };
+		DA2F992A27B42AD08BF71AF6D3376454 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		E75CA8A0C0A165CE13294916A271CBE4 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		ED7B18C7DF078758FABE9A9285E36C4B /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
 		F1156170A6294530CA12299E39B29DDB /* Pods-Emergency Numbers-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Emergency Numbers-acknowledgements.plist"; sourceTree = "<group>"; };
-		F6648929B8965232E5BE7D688B2E8D66 /* CSVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Sources/CSV/CSVReader.swift; sourceTree = "<group>"; };
-		F8D8307C9A8ED714D5ED6387A0187C70 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		FC657A2A9982AAD1967F29E418CAD610 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		F1FAF9E6716D50337D1334B82F20EBC8 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
+		F967342AA3E5D78BE9B9DF9D1D960761 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		FD82FEA9D4BCC39CF9308017469807CF /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
+		FFB033D3E4A5CF4E569815F053827023 /* VegaScrollFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VegaScrollFlowLayout-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		654EC330BDDD03B3071413BF53C90CDA /* Frameworks */ = {
+		74BFDCB94751BDC2C963263911D6E23C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26BE5587CDBBAA61B9F4B95789AFED7 /* Foundation.framework in Frameworks */,
+				95310FC34159341D06C5573C0D0B0649 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		674D1077288A3A817D8B6DE492E09435 /* Frameworks */ = {
+		78A3F70EA23EE2C90B9426F8DA985559 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				902D89C2364AD6A9F032C44498C47564 /* Foundation.framework in Frameworks */,
+				C4BF39219CED0E9AEC707E7460B86814 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE21239C24F86636D56FB91D9525D6A /* Frameworks */ = {
+		8845F269DE0DCA0661B5D6EF7DE4E240 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29D908C865A42C151AA1443207221C2B /* Foundation.framework in Frameworks */,
+				292AE7F5F6A492F3267646346E4EE255 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F907432597A2F419E64D39C5DA2E9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F161FB7348F73098236724BF065D72DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3474932DA25DE7BFDAC778F3ED9CCD7F /* CSV.swift */ = {
+		065D1F42E6C739D08DEC3736CBA91CF4 /* CSV.swift */ = {
 			isa = PBXGroup;
 			children = (
-				4D42BAF08C1AC1AFD62EEADDAFDD564C /* BinaryReader.swift */,
-				E2A903F6B42743F40C4A59F16F9EBAC0 /* CSV.swift */,
-				852ABFBE6FBEE35B06A3F2688626C2A1 /* CSVError.swift */,
-				F6648929B8965232E5BE7D688B2E8D66 /* CSVReader.swift */,
-				3B36BECE08F40546778A16CB32B9382D /* CSVWriter.swift */,
-				347C2CC133C29D9016EEB03DB571E4CC /* Endian.swift */,
-				6C5B41C10E01BFABCB6E227BFCA9224D /* UnicodeIterator.swift */,
-				E306A3D3DEB25C3B1B7B2558356AA387 /* Support Files */,
+				BE1000CE101B2603FF64695E9514F8B2 /* BinaryReader.swift */,
+				8EA3465D11EE0ADBF666356154910FF0 /* CSV.swift */,
+				1D467642F3EB444086FBD883FDCD3AAA /* CSVError.swift */,
+				09323D5B346706C66761F796568EA0C9 /* CSVReader.swift */,
+				FD82FEA9D4BCC39CF9308017469807CF /* CSVWriter.swift */,
+				533B9DFF890696DB362F91AA7ADA343C /* Endian.swift */,
+				ACB3B33A6D743A0C7C9D293B3D313475 /* UnicodeIterator.swift */,
+				7912638CD3D48EBC5A04A9150410A733 /* Support Files */,
 			);
+			name = CSV.swift;
 			path = CSV.swift;
 			sourceTree = "<group>";
 		};
-		55D88B69D1FC0BB9A8C782F6CD303999 /* SQLite.swift */ = {
+		1D0A26FD8BC8DE1EF3A4FB843849D8DC /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				81042FCA4674A6C5D3631CD5649F13D0 /* standard */,
-				86C1369B13754C5AECDA44ABDAB1237B /* Support Files */,
+				25D1C9D653F3EBD77D9F22A7D28998E5 /* AggregateFunctions.swift */,
+				C7FD468CB8128FEC0F2BB4C625C75E7A /* Blob.swift */,
+				F1FAF9E6716D50337D1334B82F20EBC8 /* Coding.swift */,
+				BBD3B95C046C148F23CD2346BA529707 /* Collation.swift */,
+				40C265194C7BD5412553BC87921DE9DE /* Connection.swift */,
+				3CE15B6D1E2D793440E9E61699D37739 /* CoreFunctions.swift */,
+				3E0C73C67065985563F181739CD69631 /* CustomFunctions.swift */,
+				CDF68D6ABE307ECA62EB7AA68220B5FD /* DateAndTimeFunctions.swift */,
+				1D807EF9416C517CEACFF31626CA2C7A /* Errors.swift */,
+				AA227377C2B076C3A7A077F02CD630B4 /* Expression.swift */,
+				C683DCFF341AB0D166C3EA8691118A88 /* Foundation.swift */,
+				F967342AA3E5D78BE9B9DF9D1D960761 /* fts3_tokenizer.h */,
+				CA77604885DAFB7BCC8D24F7CAE5E753 /* FTS4.swift */,
+				E75CA8A0C0A165CE13294916A271CBE4 /* FTS5.swift */,
+				9283B273C7E2CB0D49ACBAD741195187 /* Helpers.swift */,
+				A0A19D582086247FAAA89BD0F9E76C7E /* Operators.swift */,
+				DA2F992A27B42AD08BF71AF6D3376454 /* Query.swift */,
+				13A5908E844A0A8304D2C74D7F747A20 /* RTree.swift */,
+				0187B82E2CFA1227EC10C90655187C98 /* Schema.swift */,
+				9661C99ECD1A0202C73F00AF3D9DAD6C /* Setter.swift */,
+				7C72D86BD58B3C6CE7AB2AE8B2F54846 /* SQLite.h */,
+				4D5034DBB4A0104F5C9604EF60187934 /* SQLite-Bridging.h */,
+				638BE2E3DFC4AD9398DEA8786532F054 /* SQLite-Bridging.m */,
+				77D6DA19DF4F7D1E056E539664E29F14 /* Statement.swift */,
+				ED7B18C7DF078758FABE9A9285E36C4B /* Value.swift */,
 			);
-			path = SQLite.swift;
+			name = standard;
+			sourceTree = "<group>";
+		};
+		464A4E835C1958ECEF2ACDE4DC7E7550 /* VegaScrollFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D0F8EB900A2BC868426C13D7A97E2AA9 /* VegaScrollFlowLayout.swift */,
+				9F6BA4BD85504119E3F683DD9F17706F /* Support Files */,
+			);
+			name = VegaScrollFlowLayout;
+			path = VegaScrollFlowLayout;
 			sourceTree = "<group>";
 		};
 		5CF8CBA986780D74AC067E9F2126361F /* Pods-Emergency Numbers */ = {
@@ -199,6 +260,20 @@
 			path = "Target Support Files/Pods-Emergency Numbers";
 			sourceTree = "<group>";
 		};
+		5DF860232E542CE246819DA14C0E5E04 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6EAC82B526B5C40BB122A729C494669 /* Info.plist */,
+				6E5CB98DA2765D77C8578C574A46D822 /* SQLite.swift.modulemap */,
+				A200F6471FB4DFDFCB97E82BFF1ADBF6 /* SQLite.swift.xcconfig */,
+				790C7C295194D1053C0D0B0D51EFBB37 /* SQLite.swift-dummy.m */,
+				2F5901548C0200C520862BFA4FDE22EC /* SQLite.swift-prefix.pch */,
+				5AEF82F1EA67E1661987A20E7119E623 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,61 +282,54 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		75C43D682A52DA80EFDC9EB8156CD376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				326A96A45DB537B945E6FA91E502C722 /* CSV.framework */,
+				46B62299C0884F0670B96D7A74AAE3C3 /* Pods_Emergency_Numbers.framework */,
+				9E91CE21DCB133FB9A4A1AB191D3A4CC /* SQLite.framework */,
+				4AC9C98FD73BD4D30FBA3A7A8131034A /* VegaScrollFlowLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7912638CD3D48EBC5A04A9150410A733 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F0C361607904E90A08F0F0997F7BB73 /* CSV.swift.modulemap */,
+				488EFC083ABC15C64B57A32B559CC3D7 /* CSV.swift.xcconfig */,
+				0A62D59E28F7AA9B8C77ABF6A518FDB6 /* CSV.swift-dummy.m */,
+				D129A3A6195B1EF759F15E8877C2DCB8 /* CSV.swift-prefix.pch */,
+				8F262C115B5F8FA8EEB550B200429229 /* CSV.swift-umbrella.h */,
+				3168263A28D24B9FC24B97D57D0CE6FE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSV.swift";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D9E29492C78899014959B5A5EFF3A848 /* Pods */,
-				B273E44E6C655824F9AE6CB63D24453B /* Products */,
+				B9CC36F5A76BFEB05238AFF6EA2EBDAE /* Pods */,
+				75C43D682A52DA80EFDC9EB8156CD376 /* Products */,
 				A9C97419CB7A6C0C65B5FD2C452A2F49 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81042FCA4674A6C5D3631CD5649F13D0 /* standard */ = {
+		9F6BA4BD85504119E3F683DD9F17706F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6696D56F6155461C7CDDFF2A42A6A /* AggregateFunctions.swift */,
-				F8D8307C9A8ED714D5ED6387A0187C70 /* Blob.swift */,
-				A380C5F2B3825BC56A886343ABC8CEBE /* Coding.swift */,
-				E7678F739B402E8FCBD5C9A6DC1FE9BD /* Collation.swift */,
-				C5CBEE85F5F9315611E7F035F459B978 /* Connection.swift */,
-				6011CFACDF36D612E3FB61CB94775663 /* CoreFunctions.swift */,
-				24DEF2F49142CF0C6F6ADBC1C52076C3 /* CustomFunctions.swift */,
-				5E75FD39BF4BFCD1B4F90FA1BE7400EC /* DateAndTimeFunctions.swift */,
-				9E14F986143BB78D7C1F154403513482 /* Errors.swift */,
-				45D33662FFA0261BD6DF046652ACF6CD /* Expression.swift */,
-				20BFCA0D70A9E7364E21568DECD6B8CE /* Foundation.swift */,
-				23CCEA35741D87BE9259925B05B17672 /* fts3_tokenizer.h */,
-				6340A72198C1BDBD7AEC0D3C5F595EC5 /* FTS4.swift */,
-				24A5BBA20CC520ADE839D94AFB8158AD /* FTS5.swift */,
-				FC657A2A9982AAD1967F29E418CAD610 /* Helpers.swift */,
-				82E8D193E45899CBB6892777E42D3C2E /* Operators.swift */,
-				E95351C2915750889E88EFB9BF1C0CDA /* Query.swift */,
-				4331377DA68DD53FAADA392F19B81DF4 /* RTree.swift */,
-				AADE99CEBC1077FFE805C70A690079BE /* Schema.swift */,
-				02899D5ACF3230B34ACAE24CF08448F9 /* Setter.swift */,
-				71D0FCDABCA72346CF31E6C02A8B4F04 /* SQLite.h */,
-				BAB48279E6E59F2875378D2CED03ACA2 /* SQLite-Bridging.h */,
-				430C7940D10E767227826B6B3CEA09D9 /* SQLite-Bridging.m */,
-				77E0A03D9AD2535E74A1FAC41D52B908 /* Statement.swift */,
-				34E7E34B61CBEE302A5217DD70709CA0 /* Value.swift */,
-			);
-			name = standard;
-			sourceTree = "<group>";
-		};
-		86C1369B13754C5AECDA44ABDAB1237B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9F9B66B5A7B88C0CD289861AEDCEBA9 /* Info.plist */,
-				D1C962104F0748FF8C7F57BBA35E22B8 /* SQLite.swift.modulemap */,
-				56677D83957604FF8FF593D220F0BDD4 /* SQLite.swift.xcconfig */,
-				7DAB371C6079D844950C56F34DFCAF36 /* SQLite.swift-dummy.m */,
-				84EBB461C6206CC15E04739112DA3E24 /* SQLite.swift-prefix.pch */,
-				EFED16ED1BB19D8288DC29596320FA6B /* SQLite.swift-umbrella.h */,
+				80507309101D14100E6C26E5460044EB /* Info.plist */,
+				9E122BAA61476BD0BBA8C809BFF9C557 /* VegaScrollFlowLayout.modulemap */,
+				53F224862B7D9FDD4E804756D5E098E0 /* VegaScrollFlowLayout.xcconfig */,
+				FFB033D3E4A5CF4E569815F053827023 /* VegaScrollFlowLayout-dummy.m */,
+				73E60656CA68ED9C503AC8E7CDC1B22A /* VegaScrollFlowLayout-prefix.pch */,
+				332AF64483A358CCC6DD4BA6E53DF81E /* VegaScrollFlowLayout-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
+			path = "../Target Support Files/VegaScrollFlowLayout";
 			sourceTree = "<group>";
 		};
 		A9C97419CB7A6C0C65B5FD2C452A2F49 /* Targets Support Files */ = {
@@ -272,14 +340,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B273E44E6C655824F9AE6CB63D24453B /* Products */ = {
+		B9CC36F5A76BFEB05238AFF6EA2EBDAE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4A02C971398DD3B34525B7FF3B8B04F8 /* CSV.framework */,
-				3DE94D26AA7D897B41F6AACDB1C4BE92 /* Pods_Emergency_Numbers.framework */,
-				1495F09F794788C1162777D0FE62993D /* SQLite.framework */,
+				065D1F42E6C739D08DEC3736CBA91CF4 /* CSV.swift */,
+				E7B5516BC7622C021194D30FB33FD0D7 /* SQLite.swift */,
+				464A4E835C1958ECEF2ACDE4DC7E7550 /* VegaScrollFlowLayout */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -290,69 +358,86 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D9E29492C78899014959B5A5EFF3A848 /* Pods */ = {
+		E7B5516BC7622C021194D30FB33FD0D7 /* SQLite.swift */ = {
 			isa = PBXGroup;
 			children = (
-				3474932DA25DE7BFDAC778F3ED9CCD7F /* CSV.swift */,
-				55D88B69D1FC0BB9A8C782F6CD303999 /* SQLite.swift */,
+				1D0A26FD8BC8DE1EF3A4FB843849D8DC /* standard */,
+				5DF860232E542CE246819DA14C0E5E04 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E306A3D3DEB25C3B1B7B2558356AA387 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0ACAB0D6C2D68F001BB263332D579DA3 /* CSV.swift.modulemap */,
-				B934DE952D765C7C1D77D4B19D786A2D /* CSV.swift.xcconfig */,
-				5272F518C4CBC5BA25E10FFB14E53843 /* CSV.swift-dummy.m */,
-				3D65F4E3F99E4CB23A5FDCFDDAB074B9 /* CSV.swift-prefix.pch */,
-				E21264DB58D1F2A12CCF950FB2FA8AB4 /* CSV.swift-umbrella.h */,
-				BFB8DF4673F417DF584D0B72761D5F48 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CSV.swift";
+			name = SQLite.swift;
+			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		234777984833B48FA25224A2442FE953 /* Headers */ = {
+		6C9093C1997E02864BA403959A46BEAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFCDCDA3EE2D8668B3F82896CC102D66 /* fts3_tokenizer.h in Headers */,
-				E16F5BEB6751E18FB415425A126BE273 /* SQLite-Bridging.h in Headers */,
-				683F85BFF0FF58D150AEA9E336C75710 /* SQLite.h in Headers */,
-				8A8D7AC7CF021B127AB781F7896A7E56 /* SQLite.swift-umbrella.h in Headers */,
+				45DFFD5B2383E31FFDA0354E33506ADD /* CSV.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F9A2CFC356754414C2D18A8F07F3320 /* Headers */ = {
+		847EDFB9DAF34EBE0CBB2F4B318A75D7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF425D49A4B33E2F680F5E3613B5B75 /* CSV.swift-umbrella.h in Headers */,
+				E19E2ED91F4712E32F4EB5DD32811645 /* Pods-Emergency Numbers-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BF4A42ED839FE9BE5651B3408F80529 /* Headers */ = {
+		AC62B451E98308A54FC48C9B3599CA7F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				256B54EF4AAA3FB5E452920AAF708E3C /* Pods-Emergency Numbers-umbrella.h in Headers */,
+				B5EE7BC26A2673397E3F35411E198F41 /* fts3_tokenizer.h in Headers */,
+				1F0B6054BAE6B082C8818BF662C7D78A /* SQLite-Bridging.h in Headers */,
+				A5A955532497D6C5108F47B8DBED67D8 /* SQLite.h in Headers */,
+				24C51A6A029E2B5954B895544365CAA7 /* SQLite.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD670171F3BCBCF9F3379855D14D8F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEA818B1BC32E8A9AF1F45F2929A191 /* VegaScrollFlowLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		64852C00F02011C03B292A16F2D5DA92 /* SQLite.swift */ = {
+		2F985425C79902D20210405E0EB7FAFA /* Pods-Emergency Numbers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 915780D1666A37BBCB59EB152912B7D1 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildConfigurationList = D6D1FE9E5A79C9F5D100F0D6E618039A /* Build configuration list for PBXNativeTarget "Pods-Emergency Numbers" */;
 			buildPhases = (
-				1DC8D8B8C938E86DAE2F2111443D5133 /* Sources */,
-				6DE21239C24F86636D56FB91D9525D6A /* Frameworks */,
-				234777984833B48FA25224A2442FE953 /* Headers */,
+				847EDFB9DAF34EBE0CBB2F4B318A75D7 /* Headers */,
+				05A1A0FADC12EC094E936A59D8CCD466 /* Sources */,
+				8845F269DE0DCA0661B5D6EF7DE4E240 /* Frameworks */,
+				CCCF39079F08D52F6988B56DD0ADF1DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6674D5F1F57CCC23543056050205C20 /* PBXTargetDependency */,
+				7E9237BE0801F3C0CF2041A13D7E2E3B /* PBXTargetDependency */,
+				4FD01D03ED88294937AC1A0227B024F9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Emergency Numbers";
+			productName = "Pods-Emergency Numbers";
+			productReference = 46B62299C0884F0670B96D7A74AAE3C3 /* Pods_Emergency_Numbers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50B3714696E3E48BFB3ED1218DE8E8D6 /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0231AAF933AD4B5E15490E2589D989F /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				AC62B451E98308A54FC48C9B3599CA7F /* Headers */,
+				EADF5158FFD125E95AE18ADAB1E244B3 /* Sources */,
+				74BFDCB94751BDC2C963263911D6E23C /* Frameworks */,
+				FC1E2350A84FD372CFED369728EC334F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -360,16 +445,17 @@
 			);
 			name = SQLite.swift;
 			productName = SQLite.swift;
-			productReference = 1495F09F794788C1162777D0FE62993D /* SQLite.framework */;
+			productReference = 9E91CE21DCB133FB9A4A1AB191D3A4CC /* SQLite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */ = {
+		91B96E9BA46525BB774B90C16F7EDBE5 /* CSV.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 377FE12DC67FA05D7477B8FC587BCBC0 /* Build configuration list for PBXNativeTarget "CSV.swift" */;
+			buildConfigurationList = 28C2A0D6F76C465A1B6E3F11C0E016E2 /* Build configuration list for PBXNativeTarget "CSV.swift" */;
 			buildPhases = (
-				B9174E2573303B665560255A43590020 /* Sources */,
-				654EC330BDDD03B3071413BF53C90CDA /* Frameworks */,
-				3F9A2CFC356754414C2D18A8F07F3320 /* Headers */,
+				6C9093C1997E02864BA403959A46BEAC /* Headers */,
+				94E86CB6F04E7565A424AA45AA104057 /* Sources */,
+				9F907432597A2F419E64D39C5DA2E9BE /* Frameworks */,
+				3E95072CAEA86FD054DAEBEFA9347894 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -377,26 +463,25 @@
 			);
 			name = CSV.swift;
 			productName = CSV.swift;
-			productReference = 4A02C971398DD3B34525B7FF3B8B04F8 /* CSV.framework */;
+			productReference = 326A96A45DB537B945E6FA91E502C722 /* CSV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F3E2796C8DC051DF94AAF763219D8085 /* Pods-Emergency Numbers */ = {
+		B9525901F552619E3E082BF135BFE7B0 /* VegaScrollFlowLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AB70B104598F4DA831FFEB4D7CBA080 /* Build configuration list for PBXNativeTarget "Pods-Emergency Numbers" */;
+			buildConfigurationList = D60200EC862D4ECCD82D9A3DA224CEF4 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */;
 			buildPhases = (
-				5584D7B3DB713ED8D20B2C27F775EEC2 /* Sources */,
-				674D1077288A3A817D8B6DE492E09435 /* Frameworks */,
-				9BF4A42ED839FE9BE5651B3408F80529 /* Headers */,
+				FBD670171F3BCBCF9F3379855D14D8F6 /* Headers */,
+				DDD6B47E56C2019C0E7BCAB8C86DDC33 /* Sources */,
+				78A3F70EA23EE2C90B9426F8DA985559 /* Frameworks */,
+				9993E85DD9791599B187B3BD5D464C5D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A1FB2893014AB8835724878055F9EEFE /* PBXTargetDependency */,
-				18BF4F6DE1853ABCC13E7D2020E78B1C /* PBXTargetDependency */,
 			);
-			name = "Pods-Emergency Numbers";
-			productName = "Pods-Emergency Numbers";
-			productReference = 3DE94D26AA7D897B41F6AACDB1C4BE92 /* Pods_Emergency_Numbers.framework */;
+			name = VegaScrollFlowLayout;
+			productName = VegaScrollFlowLayout;
+			productReference = 4AC9C98FD73BD4D30FBA3A7A8131034A /* VegaScrollFlowLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -406,7 +491,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -416,90 +501,275 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B273E44E6C655824F9AE6CB63D24453B /* Products */;
+			productRefGroup = 75C43D682A52DA80EFDC9EB8156CD376 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */,
-				F3E2796C8DC051DF94AAF763219D8085 /* Pods-Emergency Numbers */,
-				64852C00F02011C03B292A16F2D5DA92 /* SQLite.swift */,
+				91B96E9BA46525BB774B90C16F7EDBE5 /* CSV.swift */,
+				2F985425C79902D20210405E0EB7FAFA /* Pods-Emergency Numbers */,
+				50B3714696E3E48BFB3ED1218DE8E8D6 /* SQLite.swift */,
+				B9525901F552619E3E082BF135BFE7B0 /* VegaScrollFlowLayout */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3E95072CAEA86FD054DAEBEFA9347894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9993E85DD9791599B187B3BD5D464C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCF39079F08D52F6988B56DD0ADF1DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E2350A84FD372CFED369728EC334F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		1DC8D8B8C938E86DAE2F2111443D5133 /* Sources */ = {
+		05A1A0FADC12EC094E936A59D8CCD466 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6657F832DBB01059F0AA4E3579DC59D2 /* AggregateFunctions.swift in Sources */,
-				F13C2C759DE69F195469033232D53961 /* Blob.swift in Sources */,
-				9E09EB4E3052245A75624E9221F70DA1 /* Coding.swift in Sources */,
-				D6799ECBE434BFE75CCBB872CA02FA79 /* Collation.swift in Sources */,
-				28D610097B83B1A87E9A3714C97C68CF /* Connection.swift in Sources */,
-				42D7CC020E9ED810B231B4DDEFDC6B1B /* CoreFunctions.swift in Sources */,
-				D59C95DB51D085494BAD07F5414C7EC7 /* CustomFunctions.swift in Sources */,
-				97B3F4F1721FF1646352B564A3560679 /* DateAndTimeFunctions.swift in Sources */,
-				25713177B277E47EEB48CADE871F6FF2 /* Errors.swift in Sources */,
-				74320485C53EB40CDDC6EBD3FA11BACA /* Expression.swift in Sources */,
-				FECB9D00755421FF9FAED506CF9F0F33 /* Foundation.swift in Sources */,
-				416246D93E7968D91622B5DE3CECC242 /* FTS4.swift in Sources */,
-				57728AA9342563DEA8281E4AB3FCA1C9 /* FTS5.swift in Sources */,
-				E3E35E0B878A926F23DBC0599D02079E /* Helpers.swift in Sources */,
-				147CE10BDD3654AD21C40E6D985DDF47 /* Operators.swift in Sources */,
-				E1E841C5D45675F8C0DD48081C973D10 /* Query.swift in Sources */,
-				A2E0C068489415AD60C2DB33F7A873C8 /* RTree.swift in Sources */,
-				9CC5E5D5EE1AF38C7D06B04D28DC552E /* Schema.swift in Sources */,
-				933CF90DDF40AB81567F7ADE2B8D156F /* Setter.swift in Sources */,
-				1754DA62EB933315E8B548A26244EEF3 /* SQLite-Bridging.m in Sources */,
-				EF8C38793E741CD152C50D09239F11B1 /* SQLite.swift-dummy.m in Sources */,
-				C474C6198EFA6B9869AA6E4984278D44 /* Statement.swift in Sources */,
-				9E202F9770E172822E026FB9B1DE6CF8 /* Value.swift in Sources */,
+				B368EE7439DC126EABF3F96AE9956B15 /* Pods-Emergency Numbers-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5584D7B3DB713ED8D20B2C27F775EEC2 /* Sources */ = {
+		94E86CB6F04E7565A424AA45AA104057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D360B93F7541C8C8FD996FE71D480B /* Pods-Emergency Numbers-dummy.m in Sources */,
+				7A3B653232F975028D05B03DE12658EB /* BinaryReader.swift in Sources */,
+				7648D80C1099FD7FC76AC7A525E04054 /* CSV.swift in Sources */,
+				24A266A2D9E5701E218941457B1C1418 /* CSV.swift-dummy.m in Sources */,
+				E67C7733E27D0D4A66DF7941F4300B1C /* CSVError.swift in Sources */,
+				B63D2BE32126E741C08E1CEE934F6486 /* CSVReader.swift in Sources */,
+				1025D91CC6049EB18FE2915F5FEE009E /* CSVWriter.swift in Sources */,
+				558FFCC81CF74B14B929DAB3884475B0 /* Endian.swift in Sources */,
+				87DF9A28F4013741FCC9B1E8A924CD8C /* UnicodeIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9174E2573303B665560255A43590020 /* Sources */ = {
+		DDD6B47E56C2019C0E7BCAB8C86DDC33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F38A004C2FA214C953353978C51174AA /* BinaryReader.swift in Sources */,
-				5C2077235AF773ED7243781A3D3F7AD3 /* CSV.swift in Sources */,
-				E92236D45CF1F30D03BCF0E9AD880164 /* CSV.swift-dummy.m in Sources */,
-				3C7A70D3428ACC40D6B098EA11958C20 /* CSVError.swift in Sources */,
-				D7E60C7B750C385B68A987A075D3C4EE /* CSVReader.swift in Sources */,
-				2F6943543FBFE0261B6EA84FA8F68BF3 /* CSVWriter.swift in Sources */,
-				DEE0F9F10ADFEE46888DB60DA71AF237 /* Endian.swift in Sources */,
-				962EE8BA9D67D1D4DD71C2D311CC19DD /* UnicodeIterator.swift in Sources */,
+				2268FD0AF9514ADF42F971E835AD68B6 /* VegaScrollFlowLayout-dummy.m in Sources */,
+				BC53C6F000426201D249418325BEC452 /* VegaScrollFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADF5158FFD125E95AE18ADAB1E244B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0FA839B60E58FFE5135BB54FBD3868 /* AggregateFunctions.swift in Sources */,
+				676F7A6D9CE6E3B36A1071B657254E30 /* Blob.swift in Sources */,
+				286593E33AFDDAFA01B6A6D0D4E6806C /* Coding.swift in Sources */,
+				AC2C24BB9F3B4DC1D9B9F541BE8A29AD /* Collation.swift in Sources */,
+				901B600CD961E6BBB5FEDAFCD0120EBB /* Connection.swift in Sources */,
+				CF786974788A5FD9548E1993082FC8FC /* CoreFunctions.swift in Sources */,
+				0AD20635FAE81FBC1827984224914714 /* CustomFunctions.swift in Sources */,
+				769FF68A4E00B9A4BFB3214EA2CC75AD /* DateAndTimeFunctions.swift in Sources */,
+				1E1271C43D0BF624868FEBA69880A6BE /* Errors.swift in Sources */,
+				CFF8638FDEBFFE79E1CBF821B34DD4B6 /* Expression.swift in Sources */,
+				5F642BAEBCBA2059784E8A8EA2F5E752 /* Foundation.swift in Sources */,
+				0B6172879EFB350DC76693D661CEE680 /* FTS4.swift in Sources */,
+				3FF7B6F3367B010FEFA03CAF4D4688DD /* FTS5.swift in Sources */,
+				51DCA9EE236CAC11E929D601A838459D /* Helpers.swift in Sources */,
+				05CBE761405E9F2D0FC06427D5DA805F /* Operators.swift in Sources */,
+				A285EC0CDA0F3EF7B95542297865FE11 /* Query.swift in Sources */,
+				F86B8EE53AF4E3B635F96015E2B47519 /* RTree.swift in Sources */,
+				3A8390A80B57D58F04D435FE1E373280 /* Schema.swift in Sources */,
+				C9C0DFFA4CF0F7453BDD64B7D74282D4 /* Setter.swift in Sources */,
+				B537DB62E4D09972BC5AA60BCFB21729 /* SQLite-Bridging.m in Sources */,
+				49E581A62B80FD577D0A55BC057D5FAB /* SQLite.swift-dummy.m in Sources */,
+				60171A1DD475A10368640B94C417FFF0 /* Statement.swift in Sources */,
+				796A69C2237E7A5234022C29A106365F /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18BF4F6DE1853ABCC13E7D2020E78B1C /* PBXTargetDependency */ = {
+		4FD01D03ED88294937AC1A0227B024F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VegaScrollFlowLayout;
+			target = B9525901F552619E3E082BF135BFE7B0 /* VegaScrollFlowLayout */;
+			targetProxy = E700E43139211F56167CEB328977338D /* PBXContainerItemProxy */;
+		};
+		7E9237BE0801F3C0CF2041A13D7E2E3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLite.swift;
-			target = 64852C00F02011C03B292A16F2D5DA92 /* SQLite.swift */;
-			targetProxy = 568180F77DF047E9E4D9686361F095B9 /* PBXContainerItemProxy */;
+			target = 50B3714696E3E48BFB3ED1218DE8E8D6 /* SQLite.swift */;
+			targetProxy = E0029EDD81B1FD4DFCE13567C71DD9F3 /* PBXContainerItemProxy */;
 		};
-		A1FB2893014AB8835724878055F9EEFE /* PBXTargetDependency */ = {
+		D6674D5F1F57CCC23543056050205C20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CSV.swift;
-			target = 701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */;
-			targetProxy = 47DA97BDD041E9D17E9353B2B9BE12E7 /* PBXContainerItemProxy */;
+			target = 91B96E9BA46525BB774B90C16F7EDBE5 /* CSV.swift */;
+			targetProxy = 0915D6A309109F29D29DA67EC3441B32 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		48584BCB4A7B970993EDC5AB711DB2DF /* Debug */ = {
+		007F1066051A467FBEB0038594E9D7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1ADC1CB624857A67EB005B3F89B10526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B71439A41BFF72335F2AF2A71F05C4 /* Pods-Emergency Numbers.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Emergency Numbers/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8243A63CC9EBA2B72617807A76584393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F224862B7D9FDD4E804756D5E098E0 /* VegaScrollFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = VegaScrollFlowLayout;
+				PRODUCT_NAME = VegaScrollFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83AE08DE02BD1FC8D75D8FA242EC44F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56CA2C3E2082326D321FB87B176ECF72 /* Pods-Emergency Numbers.debug.xcconfig */;
 			buildSettings = {
@@ -517,7 +787,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Emergency Numbers/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.modulemap";
 				OTHER_LDFLAGS = "";
@@ -535,9 +809,45 @@
 			};
 			name = Debug;
 		};
-		5DA07DBA41988DB4349AEAF1B5AC45F9 /* Debug */ = {
+		908168A44E370D6818A1787AEFF74E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56677D83957604FF8FF593D220F0BDD4 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 488EFC083ABC15C64B57A32B559CC3D7 /* CSV.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90EADA76EFB78174B90619978E03D4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A200F6471FB4DFDFCB97E82BFF1ADBF6 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -552,10 +862,90 @@
 				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
 				PRODUCT_MODULE_NAME = SQLite;
 				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE9219D66DE9CFA63190A1A95E894DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 488EFC083ABC15C64B57A32B559CC3D7 /* CSV.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D03D3CB2D2CCA83FEF10FA36D901FABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F224862B7D9FDD4E804756D5E098E0 /* VegaScrollFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = VegaScrollFlowLayout;
+				PRODUCT_NAME = VegaScrollFlowLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -567,7 +957,7 @@
 			};
 			name = Debug;
 		};
-		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+		E246FC26AF4A9832D7AA01080188D618 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -621,7 +1011,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -630,9 +1021,9 @@
 			};
 			name = Debug;
 		};
-		6823259A60B1FD28EE8A0804F4841573 /* Release */ = {
+		F50436A1DAC58D738109446A4C3CA97D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56677D83957604FF8FF593D220F0BDD4 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = A200F6471FB4DFDFCB97E82BFF1ADBF6 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -647,79 +1038,14 @@
 				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
 				PRODUCT_MODULE_NAME = SQLite;
 				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8F36B8481325943131C2447907B99CF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69B71439A41BFF72335F2AF2A71F05C4 /* Pods-Emergency Numbers.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Emergency Numbers/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9089566A9F18EC7A41BECE1F195E8594 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B934DE952D765C7C1D77D4B19D786A2D /* CSV.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
-				PRODUCT_MODULE_NAME = CSV;
-				PRODUCT_NAME = CSV;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -731,133 +1057,50 @@
 			};
 			name = Debug;
 		};
-		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B24BE27F4BC4D7CC0B44F874630416CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B934DE952D765C7C1D77D4B19D786A2D /* CSV.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
-				PRODUCT_MODULE_NAME = CSV;
-				PRODUCT_NAME = CSV;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		28C2A0D6F76C465A1B6E3F11C0E016E2 /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908168A44E370D6818A1787AEFF74E86 /* Debug */,
+				CE9219D66DE9CFA63190A1A95E894DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
-				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+				E246FC26AF4A9832D7AA01080188D618 /* Debug */,
+				007F1066051A467FBEB0038594E9D7C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		377FE12DC67FA05D7477B8FC587BCBC0 /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
+		C0231AAF933AD4B5E15490E2589D989F /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9089566A9F18EC7A41BECE1F195E8594 /* Debug */,
-				B24BE27F4BC4D7CC0B44F874630416CC /* Release */,
+				F50436A1DAC58D738109446A4C3CA97D /* Debug */,
+				90EADA76EFB78174B90619978E03D4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AB70B104598F4DA831FFEB4D7CBA080 /* Build configuration list for PBXNativeTarget "Pods-Emergency Numbers" */ = {
+		D60200EC862D4ECCD82D9A3DA224CEF4 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48584BCB4A7B970993EDC5AB711DB2DF /* Debug */,
-				8F36B8481325943131C2447907B99CF1 /* Release */,
+				D03D3CB2D2CCA83FEF10FA36D901FABD /* Debug */,
+				8243A63CC9EBA2B72617807A76584393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		915780D1666A37BBCB59EB152912B7D1 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		D6D1FE9E5A79C9F5D100F0D6E618039A /* Build configuration list for PBXNativeTarget "Pods-Emergency Numbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DA07DBA41988DB4349AEAF1B5AC45F9 /* Debug */,
-				6823259A60B1FD28EE8A0804F4841573 /* Release */,
+				83AE08DE02BD1FC8D75D8FA242EC44F0 /* Debug */,
+				1ADC1CB624857A67EB005B3F89B10526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,20 +3,24 @@ PODS:
   - SQLite.swift (0.11.5):
     - SQLite.swift/standard (= 0.11.5)
   - SQLite.swift/standard (0.11.5)
+  - VegaScrollFlowLayout (1.1)
 
 DEPENDENCIES:
   - CSV.swift (~> 2.2.1)
   - SQLite.swift (~> 0.11.5)
+  - VegaScrollFlowLayout
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CSV.swift
     - SQLite.swift
+    - VegaScrollFlowLayout
 
 SPEC CHECKSUMS:
   CSV.swift: 5bf3338aff82371cb51cc6dc559d7b45a74bab14
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
 
-PODFILE CHECKSUM: b56f382da167ee0442bf84a7d4870c9e6060a7ea
+PODFILE CHECKSUM: a896e175cee4b0894f840e27179b529c8dbe3cbc
 
 COCOAPODS: 1.5.3

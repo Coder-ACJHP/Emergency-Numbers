@@ -6,6 +6,7 @@ target 'Emergency Numbers' do
   use_frameworks!
   pod 'SQLite.swift', '~> 0.11.5'
   pod 'CSV.swift', '~> 2.2.1'
+  pod 'VegaScrollFlowLayout'
   # Pods for Emergency Numbers
 
 end

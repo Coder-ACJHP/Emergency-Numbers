@@ -8,21 +8,19 @@
 
 import UIKit
 import SQLite
+import VegaScrollFlowLayout
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
     
-
-    var singleCell = TableViewCell()
+    var singleCell = NumberCell()
     var contactList: [ContactNumber] = []
-    @IBOutlet var dataContainer: UITableView!
+    @IBOutlet var dataContainer: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataContainer.delegate = self
-        dataContainer.dataSource = self
-        dataContainer.addSubview(self.refreshControl)
+        self.adjustCollectionViewSetup()
         
         searchBar.delegate = self
         
@@ -31,6 +29,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // Request review
         StoreReviewHelper.checkAndAskForReview()
+    }
+    
+    private func adjustCollectionViewSetup() {
+        
+        let layout = VegaScrollFlowLayout()
+        dataContainer.collectionViewLayout = layout
+        dataContainer.delegate = self
+        dataContainer.dataSource = self
+        layout.minimumLineSpacing = 5
+        layout.itemSize = CGSize(width: dataContainer.frame.width, height: 75)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        dataContainer.addSubview(self.refreshControl)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,26 +75,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         dataContainer.reloadData()
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return contactList.count
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            
-            DatabaseUtil.sharedInstance.deleteById(entityId: Int64(contactList[indexPath.row].id))
-            contactList.remove(at: indexPath.row)
-            dataContainer.deleteRows(at: [indexPath], with: .automatic)
-
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        singleCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        singleCell = collectionView.dequeueReusableCell(withReuseIdentifier: "NumberCell", for: indexPath) as! NumberCell
         singleCell.unitName.text = contactList[indexPath.row].description
         singleCell.unitNumber = Int(contactList[indexPath.row].phoneNumber)
         return singleCell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        collectionView.deleteItems(at: [indexPath])
+        DatabaseUtil.sharedInstance.deleteById(entityId: Int64(contactList[indexPath.row].id))
+        contactList.remove(at: indexPath.row)
+    }
+    
+    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == "" {

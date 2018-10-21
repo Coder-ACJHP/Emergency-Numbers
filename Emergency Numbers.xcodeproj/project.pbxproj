@@ -21,10 +21,17 @@
 		5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5E620E386AB002C1D42 /* LaunchScreen.storyboard */; };
 		5850E5F120E387BA002C1D42 /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5F020E387BA002C1D42 /* app-icon.png */; };
 		5850E5F320E38DE4002C1D42 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5F220E38DE3002C1D42 /* loading.gif */; };
-		5850E5F520E39040002C1D42 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5F420E39040002C1D42 /* TableViewCell.swift */; };
+		5850E5F520E39040002C1D42 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5F420E39040002C1D42 /* NumberCell.swift */; };
 		5850E5FD20E3D324002C1D42 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5FC20E3D324002C1D42 /* info.png */; };
 		5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */; };
 		5857473C20E4BBF200642CE2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473B20E4BBF200642CE2 /* logo.png */; };
+		812F9E49217B5D5900106A38 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F9E48217B5D5900106A38 /* GradientView.swift */; };
+		8141144B217B925A00314726 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144A217B925A00314726 /* CityViewController.swift */; };
+		8141144D217B937E00314726 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144C217B937E00314726 /* ServiceViewController.swift */; };
+		8141144F217B9B1700314726 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144E217B9B1700314726 /* CityCell.swift */; };
+		81411453217C90EA00314726 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81411452217C90EA00314726 /* CSV.framework */; };
+		81411455217C90EA00314726 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81411454217C90EA00314726 /* SQLite.framework */; };
+		81411457217C90EA00314726 /* VegaScrollFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81411456217C90EA00314726 /* VegaScrollFlowLayout.framework */; };
 		EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */; };
 		F230F9FB20E548DE00869E1A /* github-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F230F9FA20E548DE00869E1A /* github-logo.png */; };
 		F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230F9FC20E5589500869E1A /* ContactNumber.swift */; };
@@ -48,11 +55,19 @@
 		5850E5E920E386AB002C1D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5850E5F020E387BA002C1D42 /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon.png"; sourceTree = "<group>"; };
 		5850E5F220E38DE3002C1D42 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
-		5850E5F420E39040002C1D42 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5850E5F420E39040002C1D42 /* NumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
 		5850E5FC20E3D324002C1D42 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		5857473B20E4BBF200642CE2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency_Numbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		812F9E48217B5D5900106A38 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8141144A217B925A00314726 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		8141144C217B937E00314726 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		8141144E217B9B1700314726 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		81411450217C90DD00314726 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LTMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81411452217C90EA00314726 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81411454217C90EA00314726 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81411456217C90EA00314726 /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.release.xcconfig"; sourceTree = "<group>"; };
 		E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.debug.xcconfig"; sourceTree = "<group>"; };
 		F230F9FA20E548DE00869E1A /* github-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "github-logo.png"; sourceTree = "<group>"; };
@@ -65,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81411453217C90EA00314726 /* CSV.framework in Frameworks */,
+				81411455217C90EA00314726 /* SQLite.framework in Frameworks */,
+				81411457217C90EA00314726 /* VegaScrollFlowLayout.framework in Frameworks */,
 				EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +93,10 @@
 		38122152100A3D1D57B2B693 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81411452217C90EA00314726 /* CSV.framework */,
+				81411454217C90EA00314726 /* SQLite.framework */,
+				81411456217C90EA00314726 /* VegaScrollFlowLayout.framework */,
+				81411450217C90DD00314726 /* LTMorphingLabel.framework */,
 				7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */,
 			);
 			name = Frameworks;
@@ -84,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				5842F1E4213929B500736A97 /* ReviewHelper.swift */,
+				812F9E48217B5D5900106A38 /* GradientView.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -91,7 +114,8 @@
 		5842F1E621392D3C00736A97 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				5850E5F420E39040002C1D42 /* TableViewCell.swift */,
+				5850E5F420E39040002C1D42 /* NumberCell.swift */,
+				8141144E217B9B1700314726 /* CityCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -166,6 +190,8 @@
 		5850E5F820E3CE67002C1D42 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8141144A217B925A00314726 /* CityViewController.swift */,
+				8141144C217B937E00314726 /* ServiceViewController.swift */,
 				5850E5DC20E386A2002C1D42 /* ViewController.swift */,
 				5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */,
 				58466BD720E4D7610029C1F9 /* AddViewController.swift */,
@@ -280,11 +306,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -317,13 +345,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */,
+				8141144B217B925A00314726 /* CityViewController.swift in Sources */,
+				8141144F217B9B1700314726 /* CityCell.swift in Sources */,
 				5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */,
 				5850E5DD20E386A2002C1D42 /* ViewController.swift in Sources */,
 				F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */,
 				58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */,
-				5850E5F520E39040002C1D42 /* TableViewCell.swift in Sources */,
+				8141144D217B937E00314726 /* ServiceViewController.swift in Sources */,
+				5850E5F520E39040002C1D42 /* NumberCell.swift in Sources */,
 				5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */,
 				5842F1E5213929B500736A97 /* ReviewHelper.swift in Sources */,
+				812F9E49217B5D5900106A38 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

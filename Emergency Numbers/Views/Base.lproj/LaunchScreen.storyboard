@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,42 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cqz-oB-GtJ">
-                                <rect key="frame" x="122" y="174" width="130" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="Qoq-ER-us6"/>
-                                    <constraint firstAttribute="height" constant="128" id="yMC-pT-AnJ"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cqz-oB-GtJ">
+                                <rect key="frame" x="122" y="269" width="130" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" أرقام الطوارئ والخدمات في العراق" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W5-VC-Ckk">
-                                <rect key="frame" x="67" y="310" width="240" height="74"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W5-VC-Ckk">
+                                <rect key="frame" x="16" y="153" width="343" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.19552391465383445" green="0.38169537739428705" blue="0.58215690940081621" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="61D-b5-Lu3"/>
-                                    <constraint firstAttribute="height" constant="74" id="6Is-yI-VU9"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="mLN-cg-Otb"/>
-                                </constraints>
+                                <string key="text"> أرقام الطوارئ
+ والخدمات في العراق</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" lookupSuggestion="YES"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="كود فور عراق ٢٠١٨ @ جميع الحقوق محفوظة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAJ-Xr-dSH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="كود فور عراق ٢٠١٨ @ جميع الحقوق محفوظة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAJ-Xr-dSH">
                                 <rect key="frame" x="88" y="640" width="198" height="14"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="198" id="eu5-oL-1Fz"/>
-                                    <constraint firstAttribute="height" constant="14" id="yhF-wJ-aUd"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="جاري التحميل..." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-fe-6WE">
-                                <rect key="frame" x="67" y="392" width="240" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="جاري التحميل..." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-fe-6WE">
+                                <rect key="frame" x="67" y="417" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1955239147" green="0.38169537739999998" blue="0.58215690939999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="AZN-hC-wdU"/>
-                                </constraints>
                                 <color key="textColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -61,18 +51,6 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.19215686274509805" green="0.38039215686274508" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="OWh-fe-6WE" firstAttribute="top" secondItem="5W5-VC-Ckk" secondAttribute="bottom" constant="8" id="65M-Lf-6Ft"/>
-                            <constraint firstItem="5W5-VC-Ckk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="VXd-oP-ysm"/>
-                            <constraint firstItem="5W5-VC-Ckk" firstAttribute="top" secondItem="Cqz-oB-GtJ" secondAttribute="bottom" constant="8" symbolic="YES" id="XB2-lf-70F"/>
-                            <constraint firstItem="Cqz-oB-GtJ" firstAttribute="centerX" secondItem="5W5-VC-Ckk" secondAttribute="centerX" id="Ysa-yx-Gs8"/>
-                            <constraint firstItem="OWh-fe-6WE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hES-LV-pIz"/>
-                            <constraint firstItem="OWh-fe-6WE" firstAttribute="leading" secondItem="5W5-VC-Ckk" secondAttribute="leading" id="hdF-oM-QS7"/>
-                            <constraint firstItem="Cqz-oB-GtJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nV2-lH-4hf"/>
-                            <constraint firstItem="TAJ-Xr-dSH" firstAttribute="centerX" secondItem="5W5-VC-Ckk" secondAttribute="centerX" id="oNx-pl-KGn"/>
-                            <constraint firstItem="Cqz-oB-GtJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="r6d-0g-hb0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TAJ-Xr-dSH" secondAttribute="bottom" constant="13" id="xR2-9a-TXE"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
