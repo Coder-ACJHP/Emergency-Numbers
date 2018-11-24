@@ -68,6 +68,16 @@ class DatabaseUtil {
         return foundedRow
     }
     
+    func findByCityName(name: String) -> [Row] {
+        do {
+            let query = emergencyNumbers.where(description.like("%\(name)"))            
+            return Array(try database!.prepare(query))
+        } catch {
+            showErrorViaAlert(error: error)
+            return [Row]()
+        }
+    }
+    
     func fetchAll() -> [Row] {
         do {
             return Array(try database!.prepare(emergencyNumbers))
@@ -108,7 +118,6 @@ class DatabaseUtil {
                 }
                 //Save some values to can now it's already done for another sessions
                 UserDefaults.standard.set(true, forKey: "Database populated")
-                UserDefaults.standard.synchronize()
                 
                 print("Database populated successfully.")
             } else {

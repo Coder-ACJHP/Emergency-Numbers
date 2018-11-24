@@ -2,7 +2,7 @@
 //  CityCell.swift
 //  Emergency Numbers
 //
-//  Created by Onur Işık on 20.10.2018.
+//  Created by Coder ACJHP on 20.10.2018.
 //  Copyright © 2018 codeForIraq. All rights reserved.
 //
 

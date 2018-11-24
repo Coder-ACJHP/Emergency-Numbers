@@ -2,7 +2,7 @@
 //  ReviewHelper.swift
 //  Emergency Numbers
 //
-//  Created by akademobi5 on 31.08.2018.
+//  Created by Coder ACJHP on 31.08.2018.
 //  Copyright © 2018 codeForIraq. All rights reserved.
 //
 
@@ -40,9 +40,7 @@ struct StoreReviewHelper {
             StoreReviewHelper().requestReview()
         case _ where appOpenCount%100 == 0 :
             StoreReviewHelper().requestReview()
-        default:
-            print("App run count is : \(appOpenCount)")
-            break;
+        default: break
         }
         
     }

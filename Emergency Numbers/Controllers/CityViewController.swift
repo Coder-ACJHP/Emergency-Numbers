@@ -2,7 +2,7 @@
 //  CityViewController.swift
 //  Emergency Numbers
 //
-//  Created by Onur Işık on 20.10.2018.
+//  Created by Coder ACJHP on 20.10.2018.
 //  Copyright © 2018 codeForIraq. All rights reserved.
 //
 
@@ -12,28 +12,38 @@ import VegaScrollFlowLayout
 
 
 /* GLOBAL VARIABLES */
-var choosenCityName: String!
+var choosenCityName: String = ""
+let citiesNamesList = ["الأنبار", "بابل", "بغداد", "البصرة", "ذي قار", "ديالى", "دهوك", "اربيل", "كربلاء", "كركوك", "ميسان", "المثنى", "النجف", "نينوى", "القادسية", "صلاح الدين", "السليمانية", "واسط"]
 
 class CityViewController: UIViewController {
 
-    var contextMenuIsShowed = false
-    @IBOutlet var contextualMenu: UIView!
+    
+    
+    @IBOutlet weak var contextMenu: UIView!
     @IBOutlet weak var headerLabel: UILabel!
-    @IBOutlet weak var secondaryLabel: UILabel!
     @IBOutlet weak var explanationLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    private var menuIsHidden: Bool = true
+    private let SEGUE_IDENTIFIER: String = "toChooseNumber"
     let cellBackgroundImage = UIImage(named: "CellBackground")
-    let citiesNamesList = ["الأنبار", "بابل", "بغداد", "البصرة", "ذي قار", "ديالى", "دهوك", "أربيل", "كربلاء", "كركوك", "ميسان", "المثنى", "النجف", "نينوى", "القادسية", "صلاح الدين", "السليمانية", "واسط"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.adjustCollectionViewSettings()
         
-        self.adjustContextMenu()
+        contextMenu.isHidden = true
+        contextMenu.alpha = 0
         
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        collectionView.contentInset = UIEdgeInsetsMake(0, 0, 30, 0)
+    }
+    
     private func adjustCollectionViewSettings() {
         
         let layout = VegaScrollFlowLayout()
@@ -45,60 +55,43 @@ class CityViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
-    private func adjustContextMenu() {
-        
-        contextualMenu.alpha = 0
-        contextualMenu.isHidden = true
-        contextualMenu.frame = CGRect(x: 30, y: 25, width: 180, height: 40)
-        self.view.addSubview(contextualMenu)
-        self.view.bringSubview(toFront: contextualMenu)
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        if contextMenuIsShowed {
-            self.hideContexualMenu()
-            contextMenuIsShowed = !contextMenuIsShowed
-        }
-    }
-    
-    @IBAction func menuButtonPressed(_ sender: Any) {
-        if !contextMenuIsShowed {
-            
-            self.showContexualMenu()
-            
-        } else {
-            
-            self.hideContexualMenu()
-        }
-        
-        contextMenuIsShowed = !contextMenuIsShowed
-    }
-    
-    private func showContexualMenu() {
-        
-        self.contextualMenu.isHidden = false
-        UIView.animate(withDuration: 0.3, animations: {
-            self.contextualMenu.alpha = 1
+    fileprivate func showMenu() {
+        self.contextMenu.isHidden = false
+        UIView.animate(withDuration: 0.4, delay: 0.0, options: [.curveEaseIn], animations: {
+            self.contextMenu.alpha = 1
         }, completion: nil)
     }
     
-    private func hideContexualMenu() {
-        
-        UIView.animate(withDuration: 0.3, animations: {
-            self.contextualMenu.alpha = 0
-        }) { (_) in
-            self.contextualMenu.isHidden = true
+    fileprivate func hideMenu() {
+        UIView.animate(withDuration: 0.4, delay: 0.0, options: [.curveEaseOut], animations: {
+            self.contextMenu.alpha = 0
+        }, completion: nil)
+        self.contextMenu.isHidden = true
+    }
+    
+    @IBAction func menuButtonPressed(_ sender: Any) {
+        if menuIsHidden {
+            showMenu()
+        } else {
+            hideMenu()
         }
+        
+        menuIsHidden = !menuIsHidden
+    }
+
+    
+    @IBAction func menuBackButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func contexualMenuFindMe(_ sender: Any) {
+    @IBAction func menuFindMePressed(_ sender: UIButton) {
         
     }
     
-    @IBAction func contextMenuRateApp(_ sender: Any) {
-        
+    @IBAction func rateButtonPressed(_ sender: UIButton) {
         SKStoreReviewController.requestReview()
+        hideMenu()
+        menuIsHidden = !menuIsHidden
     }
 }
 
@@ -122,8 +115,14 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CityCell
         choosenCityName = cell.cityNameLabel.text!
-        
-        self.performSegue(withIdentifier: "toChooseService", sender: self)
+            
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        transition.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)        
+        self.performSegue(withIdentifier: "toChooseNumber", sender: self)
     }
     
 }

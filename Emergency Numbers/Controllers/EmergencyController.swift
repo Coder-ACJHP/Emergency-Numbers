@@ -10,10 +10,17 @@ import UIKit
 import SQLite
 import VegaScrollFlowLayout
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
+class EmergencyController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
     
     var singleCell = NumberCell()
     var contactList: [ContactNumber] = []
+    //Refresh data table
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(EmergencyController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        return refreshControl
+    }()
+    
     @IBOutlet var dataContainer: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -23,12 +30,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.adjustCollectionViewSetup()
         
         searchBar.delegate = self
+        self.hideKeyboardWhenTappedAround()
         
         //Populate table
         loadData()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
-        // Request review
-        StoreReviewHelper.checkAndAskForReview()
+        dataContainer.contentInset = UIEdgeInsetsMake(0, 0, 30, 0)
     }
     
     private func adjustCollectionViewSetup() {
@@ -44,8 +55,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.loadData), name: NSNotification.Name(rawValue: "addedNewNumber"), object: nil)
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(EmergencyController.loadData), name: NSNotification.Name(rawValue: "addedNewNumber"), object: nil)
+        self.refreshControl.tintColor = self.searchBar.barTintColor
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -59,7 +70,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         contactList.removeAll(keepingCapacity: false)
         
         //Fetch all rows and append them to arrays
-        let allData = DatabaseUtil.sharedInstance.fetchAll()
+        let allData = DatabaseUtil.sharedInstance.findByCityName(name: choosenCityName)
         for row in allData {
             do {
                 contactList.append(ContactNumber(
@@ -86,15 +97,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return singleCell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        collectionView.deleteItems(at: [indexPath])
-        DatabaseUtil.sharedInstance.deleteById(entityId: Int64(contactList[indexPath.row].id))
-        contactList.remove(at: indexPath.row)
-    }
-    
-    
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == "" {
             self.loadData()
@@ -106,16 +108,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.dataContainer.reloadData()
         }
     }
-    
-    
-    //Refresh data table
-    lazy var refreshControl: UIRefreshControl = {
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(ViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
-        refreshControl.tintColor = UIColor.init(red: 55.0/255, green: 105.0/255, blue: 162.0/255, alpha: 1.0)
-        
-        return refreshControl
-    }()
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         loadData()
@@ -136,5 +128,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.view.endEditing(true)
     }
     
+    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
+        
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromLeft
+        transition.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+        self.dismiss(animated: false, completion: nil)
+    }
 }
 

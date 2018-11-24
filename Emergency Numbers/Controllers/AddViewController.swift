@@ -15,6 +15,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var unitNameField: UITextField!
     @IBOutlet weak var unitNumberField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +23,8 @@ class AddViewController: UIViewController {
         saveButton.layer.borderWidth = 2
         saveButton.layer.cornerRadius = 4
         saveButton.layer.borderColor = UIColor.init(red: 255 / 255, green: 255 / 255, blue: 255 / 255, alpha: 0.4).cgColor
-
+        
+        self.hideKeyboardWhenTappedAround() 
     }
 
     @IBAction func saveButtonPressed(_ sender: Any) {
@@ -50,6 +52,10 @@ class AddViewController: UIViewController {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "addedNewNumber"), object: nil)
         self.navigationController?.popViewController(animated: true)
         
+    }
+    
+    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

@@ -15,7 +15,7 @@
 		58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD720E4D7610029C1F9 /* AddViewController.swift */; };
 		58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */; };
 		5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DA20E386A2002C1D42 /* AppDelegate.swift */; };
-		5850E5DD20E386A2002C1D42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DC20E386A2002C1D42 /* ViewController.swift */; };
+		5850E5DD20E386A2002C1D42 /* EmergencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5DC20E386A2002C1D42 /* EmergencyController.swift */; };
 		5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5DE20E386A2002C1D42 /* Main.storyboard */; };
 		5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5E420E386AB002C1D42 /* Assets.xcassets */; };
 		5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5E620E386AB002C1D42 /* LaunchScreen.storyboard */; };
@@ -27,15 +27,17 @@
 		5857473C20E4BBF200642CE2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473B20E4BBF200642CE2 /* logo.png */; };
 		812F9E49217B5D5900106A38 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F9E48217B5D5900106A38 /* GradientView.swift */; };
 		8141144B217B925A00314726 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144A217B925A00314726 /* CityViewController.swift */; };
-		8141144D217B937E00314726 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144C217B937E00314726 /* ServiceViewController.swift */; };
+		8141144D217B937E00314726 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144C217B937E00314726 /* EntryViewController.swift */; };
 		8141144F217B9B1700314726 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144E217B9B1700314726 /* CityCell.swift */; };
 		81411453217C90EA00314726 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81411452217C90EA00314726 /* CSV.framework */; };
 		81411455217C90EA00314726 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81411454217C90EA00314726 /* SQLite.framework */; };
 		81411457217C90EA00314726 /* VegaScrollFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81411456217C90EA00314726 /* VegaScrollFlowLayout.framework */; };
+		81C8D9EB21A01E7800CA6DE0 /* EmergencyNumbers.csv in Resources */ = {isa = PBXBuildFile; fileRef = 81C8D9EA21A01E7800CA6DE0 /* EmergencyNumbers.csv */; };
+		81C8D9ED21A0300A00CA6DE0 /* ServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8D9EC21A0300A00CA6DE0 /* ServicesController.swift */; };
+		81D3AAE821A9B8D000408FAD /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3AAE721A9B8D000408FAD /* HelperExtensions.swift */; };
 		EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */; };
 		F230F9FB20E548DE00869E1A /* github-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F230F9FA20E548DE00869E1A /* github-logo.png */; };
 		F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230F9FC20E5589500869E1A /* ContactNumber.swift */; };
-		F28CA33020E566E9000A812C /* EmergencyNumbers.csv in Resources */ = {isa = PBXBuildFile; fileRef = F28CA32F20E566E9000A812C /* EmergencyNumbers.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +50,7 @@
 		58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
 		5850E5D720E386A2002C1D42 /* Emergency Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emergency Numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5850E5DA20E386A2002C1D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5850E5DC20E386A2002C1D42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5850E5DC20E386A2002C1D42 /* EmergencyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyController.swift; sourceTree = "<group>"; };
 		5850E5DF20E386A2002C1D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5850E5E420E386AB002C1D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5850E5E720E386AB002C1D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,17 +64,19 @@
 		7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency_Numbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		812F9E48217B5D5900106A38 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8141144A217B925A00314726 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
-		8141144C217B937E00314726 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		8141144C217B937E00314726 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		8141144E217B9B1700314726 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		81411450217C90DD00314726 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LTMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81411452217C90EA00314726 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81411454217C90EA00314726 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81411456217C90EA00314726 /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C8D9EA21A01E7800CA6DE0 /* EmergencyNumbers.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmergencyNumbers.csv; sourceTree = "<group>"; };
+		81C8D9EC21A0300A00CA6DE0 /* ServicesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesController.swift; sourceTree = "<group>"; };
+		81D3AAE721A9B8D000408FAD /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.release.xcconfig"; sourceTree = "<group>"; };
 		E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.debug.xcconfig"; sourceTree = "<group>"; };
 		F230F9FA20E548DE00869E1A /* github-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "github-logo.png"; sourceTree = "<group>"; };
 		F230F9FC20E5589500869E1A /* ContactNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNumber.swift; sourceTree = "<group>"; };
-		F28CA32F20E566E9000A812C /* EmergencyNumbers.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmergencyNumbers.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				5842F1E4213929B500736A97 /* ReviewHelper.swift */,
 				812F9E48217B5D5900106A38 /* GradientView.swift */,
+				81D3AAE721A9B8D000408FAD /* HelperExtensions.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -190,11 +195,12 @@
 		5850E5F820E3CE67002C1D42 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8141144C217B937E00314726 /* EntryViewController.swift */,
 				8141144A217B925A00314726 /* CityViewController.swift */,
-				8141144C217B937E00314726 /* ServiceViewController.swift */,
-				5850E5DC20E386A2002C1D42 /* ViewController.swift */,
-				5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */,
+				5850E5DC20E386A2002C1D42 /* EmergencyController.swift */,
+				81C8D9EC21A0300A00CA6DE0 /* ServicesController.swift */,
 				58466BD720E4D7610029C1F9 /* AddViewController.swift */,
+				5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,7 +208,7 @@
 		5850E5F920E3CE73002C1D42 /* Datasource */ = {
 			isa = PBXGroup;
 			children = (
-				F28CA32F20E566E9000A812C /* EmergencyNumbers.csv */,
+				81C8D9EA21A01E7800CA6DE0 /* EmergencyNumbers.csv */,
 				58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */,
 				F230F9FC20E5589500869E1A /* ContactNumber.swift */,
 			);
@@ -278,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F28CA33020E566E9000A812C /* EmergencyNumbers.csv in Resources */,
+				81C8D9EB21A01E7800CA6DE0 /* EmergencyNumbers.csv in Resources */,
 				58215E7420E651990004BB8B /* Design.png in Resources */,
 				5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */,
 				5857473C20E4BBF200642CE2 /* logo.png in Resources */,
@@ -348,10 +354,12 @@
 				8141144B217B925A00314726 /* CityViewController.swift in Sources */,
 				8141144F217B9B1700314726 /* CityCell.swift in Sources */,
 				5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */,
-				5850E5DD20E386A2002C1D42 /* ViewController.swift in Sources */,
+				81C8D9ED21A0300A00CA6DE0 /* ServicesController.swift in Sources */,
+				5850E5DD20E386A2002C1D42 /* EmergencyController.swift in Sources */,
 				F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */,
+				81D3AAE821A9B8D000408FAD /* HelperExtensions.swift in Sources */,
 				58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */,
-				8141144D217B937E00314726 /* ServiceViewController.swift in Sources */,
+				8141144D217B937E00314726 /* EntryViewController.swift in Sources */,
 				5850E5F520E39040002C1D42 /* NumberCell.swift in Sources */,
 				5850E5DB20E386A2002C1D42 /* AppDelegate.swift in Sources */,
 				5842F1E5213929B500736A97 /* ReviewHelper.swift in Sources */,
