@@ -46,8 +46,11 @@ class NumberCell: UICollectionViewCell {
             
         } else {
             
-            unitName.layer.opacity = unitName.layer.opacity - Float(location.x) / 2500
-            //Let the button swiping on 1 line
+            let fraction: Float = (Float(location.x) / Float(self.contentView.bounds.width))
+            self.unitName.layer.opacity = (0.90 - fraction)
+            
+
+            //Let the button swiping on streight line
             if location.y > fixedPosition.y || location.y < fixedPosition.y {
                 location.y = 36.0
             }
@@ -59,8 +62,5 @@ class NumberCell: UICollectionViewCell {
             }
             callButton.layer.position = location // set button to where finger is
         }
-        
-        
-        
     }
 }

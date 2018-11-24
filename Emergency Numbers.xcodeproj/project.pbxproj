@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58215E6A20E612A90004BB8B /* link-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E6920E612A80004BB8B /* link-icon.png */; };
-		58215E7020E61A7B0004BB8B /* goal.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E6F20E61A7B0004BB8B /* goal.png */; };
-		58215E7220E62ABB0004BB8B /* email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7120E62ABA0004BB8B /* email-icon.png */; };
 		58215E7420E651990004BB8B /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7320E651980004BB8B /* Design.png */; };
 		5842F1E5213929B500736A97 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842F1E4213929B500736A97 /* ReviewHelper.swift */; };
 		58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD720E4D7610029C1F9 /* AddViewController.swift */; };
@@ -19,12 +16,8 @@
 		5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5DE20E386A2002C1D42 /* Main.storyboard */; };
 		5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5E420E386AB002C1D42 /* Assets.xcassets */; };
 		5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5E620E386AB002C1D42 /* LaunchScreen.storyboard */; };
-		5850E5F120E387BA002C1D42 /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5F020E387BA002C1D42 /* app-icon.png */; };
-		5850E5F320E38DE4002C1D42 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5F220E38DE3002C1D42 /* loading.gif */; };
 		5850E5F520E39040002C1D42 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E5F420E39040002C1D42 /* NumberCell.swift */; };
-		5850E5FD20E3D324002C1D42 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5850E5FC20E3D324002C1D42 /* info.png */; };
 		5850E60120E3DEC8002C1D42 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */; };
-		5857473C20E4BBF200642CE2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857473B20E4BBF200642CE2 /* logo.png */; };
 		812F9E49217B5D5900106A38 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F9E48217B5D5900106A38 /* GradientView.swift */; };
 		8141144B217B925A00314726 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144A217B925A00314726 /* CityViewController.swift */; };
 		8141144D217B937E00314726 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141144C217B937E00314726 /* EntryViewController.swift */; };
@@ -36,14 +29,10 @@
 		81C8D9ED21A0300A00CA6DE0 /* ServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8D9EC21A0300A00CA6DE0 /* ServicesController.swift */; };
 		81D3AAE821A9B8D000408FAD /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D3AAE721A9B8D000408FAD /* HelperExtensions.swift */; };
 		EB268C2CF586C0B2D88CD8E8 /* Pods_Emergency_Numbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */; };
-		F230F9FB20E548DE00869E1A /* github-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F230F9FA20E548DE00869E1A /* github-logo.png */; };
 		F230F9FD20E5589500869E1A /* ContactNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F230F9FC20E5589500869E1A /* ContactNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58215E6920E612A80004BB8B /* link-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "link-icon.png"; sourceTree = "<group>"; };
-		58215E6F20E61A7B0004BB8B /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal.png; sourceTree = "<group>"; };
-		58215E7120E62ABA0004BB8B /* email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email-icon.png"; sourceTree = "<group>"; };
 		58215E7320E651980004BB8B /* Design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Design.png; sourceTree = "<group>"; };
 		5842F1E4213929B500736A97 /* ReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHelper.swift; sourceTree = "<group>"; };
 		58466BD720E4D7610029C1F9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
@@ -55,12 +44,8 @@
 		5850E5E420E386AB002C1D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5850E5E720E386AB002C1D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5850E5E920E386AB002C1D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5850E5F020E387BA002C1D42 /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon.png"; sourceTree = "<group>"; };
-		5850E5F220E38DE3002C1D42 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		5850E5F420E39040002C1D42 /* NumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
-		5850E5FC20E3D324002C1D42 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		5850E60020E3DEC8002C1D42 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
-		5857473B20E4BBF200642CE2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		7531B393001FC14305DA0BBC /* Pods_Emergency_Numbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emergency_Numbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		812F9E48217B5D5900106A38 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8141144A217B925A00314726 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +60,6 @@
 		81D3AAE721A9B8D000408FAD /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		8D52D8C4AD16A4F8515CB1D2 /* Pods-Emergency Numbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.release.xcconfig"; sourceTree = "<group>"; };
 		E22DEC8D3EABD4A804A994AB /* Pods-Emergency Numbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emergency Numbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emergency Numbers/Pods-Emergency Numbers.debug.xcconfig"; sourceTree = "<group>"; };
-		F230F9FA20E548DE00869E1A /* github-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "github-logo.png"; sourceTree = "<group>"; };
 		F230F9FC20E5589500869E1A /* ContactNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,14 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				58215E7320E651980004BB8B /* Design.png */,
-				58215E6920E612A80004BB8B /* link-icon.png */,
-				58215E7120E62ABA0004BB8B /* email-icon.png */,
-				5857473B20E4BBF200642CE2 /* logo.png */,
-				58215E6F20E61A7B0004BB8B /* goal.png */,
-				5850E5FC20E3D324002C1D42 /* info.png */,
-				F230F9FA20E548DE00869E1A /* github-logo.png */,
-				5850E5F220E38DE3002C1D42 /* loading.gif */,
-				5850E5F020E387BA002C1D42 /* app-icon.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -287,16 +263,8 @@
 				81C8D9EB21A01E7800CA6DE0 /* EmergencyNumbers.csv in Resources */,
 				58215E7420E651990004BB8B /* Design.png in Resources */,
 				5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */,
-				5857473C20E4BBF200642CE2 /* logo.png in Resources */,
 				5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */,
-				58215E7020E61A7B0004BB8B /* goal.png in Resources */,
-				F230F9FB20E548DE00869E1A /* github-logo.png in Resources */,
-				5850E5F320E38DE4002C1D42 /* loading.gif in Resources */,
-				58215E7220E62ABB0004BB8B /* email-icon.png in Resources */,
-				5850E5F120E387BA002C1D42 /* app-icon.png in Resources */,
 				5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */,
-				5850E5FD20E3D324002C1D42 /* info.png in Resources */,
-				58215E6A20E612A90004BB8B /* link-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
