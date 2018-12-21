@@ -16,6 +16,9 @@ class EntryViewController: UIViewController {
     @IBOutlet weak var contextMenu: UIView!
     
     private var menuIsHidden: Bool = true
+    private let aboutPageSegueIdentifier = "toAboutUs"
+    private let choooseCitySegueIdentifier = "toCityView"
+    private let emergencySegueIdentifier = "toEmergencyNumbers"
     
     lazy var tapGesture: UITapGestureRecognizer = {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
@@ -70,4 +73,22 @@ class EntryViewController: UIViewController {
         hideMenu()
         menuIsHidden = !menuIsHidden
     }
+    
+    @IBAction func servicesBtnPressed(_ sender: UIButton) {
+
+        self.performSegue(withIdentifier: choooseCitySegueIdentifier, sender: nil)
+    }
+    
+    
+    @IBAction func emergencyBtnPressed(_ sender: UIButton) {
+
+        self.performSegue(withIdentifier: emergencySegueIdentifier, sender: nil)
+    }
+    
+    
+    @IBAction func aboutAppBtnPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: aboutPageSegueIdentifier, sender: nil)
+    }
+    
 }

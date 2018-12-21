@@ -10,13 +10,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ارقام الطوارئ-->
+        <!--ارقام الخدمات-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EmergencyController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmergencyController" id="BYZ-38-t0r" customClass="ServicesController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Weu-Gb-Q7Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="ابحث عن رقم" translatesAutoresizingMaskIntoConstraints="NO" id="JCG-vB-8nu">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
@@ -47,7 +47,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسعاف فوري ٣٣٣" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="37k-fp-Hyo">
-                                                    <rect key="frame" x="74" y="13" width="273" height="45"/>
+                                                    <rect key="frame" x="73" y="13" width="274" height="45"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,23 +75,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Vvc-dS-6su"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ارقام الطوارئ" id="94l-zf-2L2">
+                    <navigationItem key="navigationItem" title="ارقام الخدمات" id="94l-zf-2L2">
                         <barButtonItem key="leftBarButtonItem" title="الرجوع" id="TOB-rI-m9N">
                             <connections>
-                                <action selector="backButtonPressed:" destination="BYZ-38-t0r" id="ISU-xE-THa"/>
+                                <action selector="backButtonPressed:" destination="BYZ-38-t0r" id="8Ca-kY-XS5"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="compose" id="x2i-G7-IvP">
                                 <color key="tintColor" red="0.43105101340000002" green="0.43531884520000003" blue="0.43531884520000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="RHJ-ac-1rK" kind="showDetail" id="V89-zW-wd8"/>
+                                    <segue destination="RHJ-ac-1rK" kind="showDetail" id="aXr-EK-sMX"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="add" id="hdw-jP-Lj7">
                                 <color key="tintColor" red="0.43137254901960786" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="vwk-0r-rfx" kind="showDetail" id="7TZ-nP-AIl"/>
+                                    <segue destination="vwk-0r-rfx" kind="showDetail" id="gmn-1M-Avq"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="140"/>
+            <point key="canvasLocation" x="831" y="140"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="mbu-YX-Uzk">
@@ -126,7 +126,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w5W-D4-uth" kind="showDetail" id="5RN-MQ-nKX"/>
+                                    <action selector="servicesBtnPressed:" destination="ZZX-dV-Zhy" eventType="touchUpInside" id="Vtm-ys-z8x"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGr-Rs-l3E">
@@ -420,7 +420,7 @@
                                     <color key="titleShadowColor" red="0.9137254901960784" green="0.82745098039215681" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="C38-9R-F8V" kind="showDetail" id="FQW-vE-W8P"/>
+                                    <action selector="emergencyBtnPressed:" destination="ZZX-dV-Zhy" eventType="touchUpInside" id="iQG-hu-Sbq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpw-Sf-GW1">
@@ -440,7 +440,7 @@
                                     <color key="titleColor" red="0.23921568627450979" green="0.41568627450980389" blue="0.61176470588235299" alpha="0.63043129280821919" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RHJ-ac-1rK" kind="showDetail" id="lvs-An-c3e"/>
+                                    <action selector="aboutAppBtnPressed:" destination="ZZX-dV-Zhy" eventType="touchUpInside" id="Sih-Vj-JAR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اهلا بك !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnG-m7-M0N">
@@ -506,6 +506,9 @@
                         <outlet property="contextMenu" destination="u5T-TH-0VF" id="Uz8-KQ-JDT"/>
                         <outlet property="detailLabel" destination="VGr-Rs-l3E" id="9dq-x2-abs"/>
                         <outlet property="headerLabel" destination="inL-Hn-nUS" id="NCd-Wj-yq5"/>
+                        <segue destination="C38-9R-F8V" kind="showDetail" identifier="toEmergencyNumbers" id="aYP-z7-AFt"/>
+                        <segue destination="w5W-D4-uth" kind="showDetail" identifier="toCityView" id="iJj-VA-Vz1"/>
+                        <segue destination="RHJ-ac-1rK" kind="showDetail" identifier="toAboutUs" id="YyF-9u-x5C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwG-MY-pvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -515,7 +518,7 @@
         <!--ارقام الطوارئ-->
         <scene sceneID="RWm-jF-Rxf">
             <objects>
-                <viewController id="f8N-mE-VKe" customClass="ServicesController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ServicesController" id="f8N-mE-VKe" customClass="EmergencyController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYw-BS-Hrk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -549,7 +552,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسعاف فوري ٣٣٣" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-ba-u5s">
-                                                    <rect key="frame" x="73" y="13" width="274" height="45"/>
+                                                    <rect key="frame" x="73" y="13" width="273" height="45"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -581,18 +584,18 @@
                         <barButtonItem key="backBarButtonItem" title="الرجوع" id="0gX-ia-5KK"/>
                         <barButtonItem key="leftBarButtonItem" title="الرجوع" id="Vrs-4w-xYR">
                             <connections>
-                                <action selector="backButonPressed:" destination="f8N-mE-VKe" id="zsi-ir-S4G"/>
+                                <action selector="backButonPressed:" destination="f8N-mE-VKe" id="dYU-e1-gmQ"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="compose" id="jRR-N4-btU">
                                 <connections>
-                                    <segue destination="RHJ-ac-1rK" kind="showDetail" id="8Ru-UZ-mqX"/>
+                                    <segue destination="RHJ-ac-1rK" kind="showDetail" id="i7C-Pm-car"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="add" id="PQh-kP-g4w">
                                 <connections>
-                                    <segue destination="vwk-0r-rfx" kind="showDetail" id="lgb-JS-nv8"/>
+                                    <segue destination="vwk-0r-rfx" kind="showDetail" id="a3K-Fj-DPA"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -604,12 +607,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Z9-9x-6BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="896"/>
+            <point key="canvasLocation" x="-3017" y="140"/>
         </scene>
         <!--اضافة رقم جديد-->
         <scene sceneID="kjK-vD-waz">
             <objects>
-                <viewController title="اضافة رقم جديد" id="Qjk-IC-rLc" customClass="AddViewController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddViewController" title="اضافة رقم جديد" id="Qjk-IC-rLc" customClass="AddViewController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ha-PN-1iq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -727,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhK-8c-0do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="896"/>
+            <point key="canvasLocation" x="-1466" y="1075"/>
         </scene>
         <!--معلومات التطبيق-->
         <scene sceneID="Lph-4p-GfS">
@@ -1044,12 +1047,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KP1-bN-7qE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="527"/>
+            <point key="canvasLocation" x="-785" y="1404"/>
         </scene>
         <!--City View Controller-->
         <scene sceneID="PEH-gt-3Kl">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" id="w5W-D4-uth" customClass="CityViewController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CityViewController" id="w5W-D4-uth" customClass="CityViewController" customModule="Emergency_Numbers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYE-aU-ZEJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1603,7 +1606,7 @@
                         <outlet property="contextMenu" destination="WLb-C0-WES" id="haG-dg-1gm"/>
                         <outlet property="explanationLabel" destination="Olc-Od-IC9" id="cw9-Ux-HqJ"/>
                         <outlet property="headerLabel" destination="1gB-Mg-wA6" id="aBF-PK-jXI"/>
-                        <segue destination="Rx2-Mh-sOV" kind="showDetail" identifier="toChooseNumber" animates="NO" id="xJd-Ch-aq2"/>
+                        <segue destination="Rx2-Mh-sOV" kind="showDetail" identifier="toChooseNumber" id="xJd-Ch-aq2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhk-VH-swm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1633,12 +1636,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUL-NC-BKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="140"/>
+            <point key="canvasLocation" x="76" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7zK-v3-xfc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="partialCurl" id="C38-9R-F8V" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C38-9R-F8V" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b9d-WT-iKh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1658,7 +1661,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="01c-sO-zLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1479" y="896"/>
+            <point key="canvasLocation" x="-2282" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aYM-Ti-kMP">
@@ -1682,7 +1685,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtQ-Np-qmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="896"/>
+            <point key="canvasLocation" x="-2174" y="1075"/>
         </scene>
     </scenes>
     <resources>
@@ -1709,7 +1712,7 @@
         <image name="target" width="102.40000152587891" height="102.40000152587891"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lgb-JS-nv8"/>
-        <segue reference="8Ru-UZ-mqX"/>
+        <segue reference="gmn-1M-Avq"/>
+        <segue reference="YyF-9u-x5C"/>
     </inferredMetricsTieBreakers>
 </document>

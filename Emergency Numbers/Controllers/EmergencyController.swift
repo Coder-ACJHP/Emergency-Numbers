@@ -30,10 +30,12 @@ class EmergencyController: UIViewController, UICollectionViewDelegate, UICollect
         self.adjustCollectionViewSetup()
         
         searchBar.delegate = self
-        self.hideKeyboardWhenTappedAround()
         
         //Populate table
         loadData()
+        
+        // Request review
+        StoreReviewHelper.checkAndAskForReview()
     }
     
     override func viewDidLayoutSubviews() {
@@ -64,20 +66,30 @@ class EmergencyController: UIViewController, UICollectionViewDelegate, UICollect
         NotificationCenter.default.removeObserver(self)
     }
     
+    
+    @IBAction func backButonPressed(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     @objc func loadData() {
         
         //Clean all arrays
         contactList.removeAll(keepingCapacity: false)
         
         //Fetch all rows and append them to arrays
-        let allData = DatabaseUtil.sharedInstance.findByCityName(name: choosenCityName)
+        let allData = DatabaseUtil.sharedInstance.fetchAll()
         for row in allData {
             do {
-                contactList.append(ContactNumber(
-                    contactId: Int64(try row.get(DatabaseUtil.sharedInstance.id)),
-                    contactName: String(try row.get(DatabaseUtil.sharedInstance.description)),
-                    contactNumber: Int64(try row.get(DatabaseUtil.sharedInstance.phoneNumber)))
-                )
+                
+                if !citiesNamesList.contains(where: try row.get(DatabaseUtil.sharedInstance.description).contains) {
+                    contactList.append(ContactNumber(
+                        contactId: Int64(try row.get(DatabaseUtil.sharedInstance.id)),
+                        contactName: String(try row.get(DatabaseUtil.sharedInstance.description)),
+                        contactNumber: Int64(try row.get(DatabaseUtil.sharedInstance.phoneNumber)))
+                    )
+                }
+                
             }catch {
                 print(error.localizedDescription)
             }
@@ -128,15 +140,5 @@ class EmergencyController: UIViewController, UICollectionViewDelegate, UICollect
         self.view.endEditing(true)
     }
     
-    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
-        
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromLeft
-        transition.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
-        view.window!.layer.add(transition, forKey: kCATransition)
-        self.dismiss(animated: false, completion: nil)
-    }
 }
 

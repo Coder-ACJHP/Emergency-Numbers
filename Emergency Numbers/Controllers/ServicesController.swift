@@ -30,12 +30,10 @@ class ServicesController: UIViewController, UICollectionViewDelegate, UICollecti
         self.adjustCollectionViewSetup()
         
         searchBar.delegate = self
+        self.hideKeyboardWhenTappedAround()
         
         //Populate table
         loadData()
-        
-        // Request review
-        StoreReviewHelper.checkAndAskForReview()
     }
     
     override func viewDidLayoutSubviews() {
@@ -66,30 +64,20 @@ class ServicesController: UIViewController, UICollectionViewDelegate, UICollecti
         NotificationCenter.default.removeObserver(self)
     }
     
-    
-    @IBAction func backButonPressed(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
     @objc func loadData() {
         
         //Clean all arrays
         contactList.removeAll(keepingCapacity: false)
         
         //Fetch all rows and append them to arrays
-        let allData = DatabaseUtil.sharedInstance.fetchAll()
+        let allData = DatabaseUtil.sharedInstance.findByCityName(name: choosenCityName)
         for row in allData {
             do {
-                
-                if !citiesNamesList.contains(where: try row.get(DatabaseUtil.sharedInstance.description).contains) {
-                    contactList.append(ContactNumber(
-                        contactId: Int64(try row.get(DatabaseUtil.sharedInstance.id)),
-                        contactName: String(try row.get(DatabaseUtil.sharedInstance.description)),
-                        contactNumber: Int64(try row.get(DatabaseUtil.sharedInstance.phoneNumber)))
-                    )
-                }
-                
+                contactList.append(ContactNumber(
+                    contactId: Int64(try row.get(DatabaseUtil.sharedInstance.id)),
+                    contactName: String(try row.get(DatabaseUtil.sharedInstance.description)),
+                    contactNumber: Int64(try row.get(DatabaseUtil.sharedInstance.phoneNumber)))
+                )
             }catch {
                 print(error.localizedDescription)
             }
@@ -140,5 +128,9 @@ class ServicesController: UIViewController, UICollectionViewDelegate, UICollecti
         self.view.endEditing(true)
     }
     
+    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
+
+        self.dismiss(animated: false, completion: nil)
+    }
 }
 

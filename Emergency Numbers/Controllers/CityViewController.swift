@@ -116,12 +116,6 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.cellForItem(at: indexPath) as! CityCell
         choosenCityName = cell.cityNameLabel.text!
             
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = kCATransitionPush
-        transition.subtype = kCATransitionFromRight
-        transition.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
-        view.window!.layer.add(transition, forKey: kCATransition)        
         self.performSegue(withIdentifier: "toChooseNumber", sender: self)
     }
     
