@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58215E7420E651990004BB8B /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = 58215E7320E651980004BB8B /* Design.png */; };
 		5842F1E5213929B500736A97 /* ReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842F1E4213929B500736A97 /* ReviewHelper.swift */; };
 		58466BD820E4D7610029C1F9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD720E4D7610029C1F9 /* AddViewController.swift */; };
 		58466BDA20E4E40D0029C1F9 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */; };
@@ -33,7 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58215E7320E651980004BB8B /* Design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Design.png; sourceTree = "<group>"; };
 		5842F1E4213929B500736A97 /* ReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHelper.swift; sourceTree = "<group>"; };
 		58466BD720E4D7610029C1F9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		58466BD920E4E40D0029C1F9 /* DatabaseUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
@@ -136,19 +134,10 @@
 				5850E5F820E3CE67002C1D42 /* Controllers */,
 				5850E5F720E3CE5A002C1D42 /* Views */,
 				5850E5F620E3CE4D002C1D42 /* Base */,
-				5850E5EF20E3879E002C1D42 /* Resources */,
 				5850E5E420E386AB002C1D42 /* Assets.xcassets */,
 				5850E5E920E386AB002C1D42 /* Info.plist */,
 			);
 			path = "Emergency Numbers";
-			sourceTree = "<group>";
-		};
-		5850E5EF20E3879E002C1D42 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				58215E7320E651980004BB8B /* Design.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5850E5F620E3CE4D002C1D42 /* Base */ = {
@@ -261,7 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C8D9EB21A01E7800CA6DE0 /* EmergencyNumbers.csv in Resources */,
-				58215E7420E651990004BB8B /* Design.png in Resources */,
 				5850E5E820E386AB002C1D42 /* LaunchScreen.storyboard in Resources */,
 				5850E5E520E386AB002C1D42 /* Assets.xcassets in Resources */,
 				5850E5E020E386A2002C1D42 /* Main.storyboard in Resources */,
